@@ -1,0 +1,96 @@
+form{
+    .form-ul{
+        width           : 100%;
+        padding         : 5px; 
+        >li{
+            width         : 100%;
+            padding       : 5px 0px;
+            display       : flex;
+            align-items   : center;
+            >ul{
+                width       : 100%;
+                display     : flex; 
+                >li{
+                    display    : inline-flex;
+                    &:first-child{
+                        flex          : 1;
+                        font-size     : 0.9em;
+                        align-items   : center;
+                        min-width     : 100px;
+                        justify-content: flex-end;
+                        &:after{
+                            content: ":";
+                            padding: 0px 10px;
+                        }
+                    }
+                    &:last-child{
+                        flex          : 3;
+                    }
+                }
+            }
+        }
+    }
+    input,button,textarea{
+        width           : 100%;
+        outline         : none;
+        border          : none;
+        padding         : 5px;
+        background      : transparent;
+        &::placeholder{
+            color         : #ccc;
+        }
+    }
+    input{
+        height          : 44px;
+        font-size       : 0.9em;
+        letter-spacing  : 0.1em;
+    }
+    button,.formBtn{
+        width           : 100%;
+        height          : 40px;
+        display         : inline-flex;
+        align-items     : center;
+        justify-content : center;
+        font-size       : 0.9em;
+        background      : #ccc;
+        margin-left     : 10px;
+        cursor          : pointer;
+        border-radius   : 4px;
+        opacity         : 0.8;
+        transition      : opacity .3s;
+        &:hover{
+            opacity        : 1;
+        } 
+        &:first-child{
+            margin-left    : 0px;
+        }
+        &:last-child{
+            margin-left    : 10px;
+        }
+        &.cancel{
+            background     : #6c757d;
+            color          : #fff;
+        }
+        &[type=submit]{
+            background    : #727cf5;
+            color         : #fff;
+        }
+    }
+
+    textarea{
+        font-size       : 0.9em;
+        min-height      : 150px;
+        appearance      : none;
+    }
+
+    .input-box{
+        width      : 100%;
+        height     : 100%;
+        min-height : 44px;
+        display    : flex;
+        background : #fff; 
+        &.false{
+            background: #ffe4e4;
+        }
+    }
+}

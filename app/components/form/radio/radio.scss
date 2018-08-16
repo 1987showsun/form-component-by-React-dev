@@ -1,0 +1,48 @@
+.radio-wrap{
+    width      : 100%;
+    display    : flex;
+    flex-wrap  : wrap; 
+    .input-radio{
+        height          : 44px;
+        padding         : 0px 10px;
+        display         : flex;
+        align-items     : center;
+        .checkmark{
+            width          : 21px;
+            height         : 21px;
+            display        : inline-flex;
+            background     : #ccc;
+            margin-right   : 10px;
+            border-radius  : 100px; 
+            align-items    : center;
+            justify-content: center;
+            box-shadow     : inset 0px 0px 3px rgba(0,0,0,.4);
+            &:after{
+                content       : "";
+                width         : 9px;
+                height        : 9px;
+                display       : flex;  
+                background    : #fff;
+                border-radius : 100px;
+                opacity       : 0;
+            }
+        }
+    }
+    [type=radio]{
+        width       : 21px;
+        height      : 21px;
+        margin-right: -23px; 
+        position    : relative;
+        z-index     : 2;
+        opacity     : 0;
+        cursor      : pointer;
+        &:checked{
+            ~.checkmark{
+                background     : #727cf5;
+                &:after{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}

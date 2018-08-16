@@ -1,0 +1,460 @@
+[
+    {
+        "type"        : "text",
+        "name"        : "username",
+        "value"       : "sun",
+        "data"        : [],
+        "label"       : "Username",
+        "placeholder" : "please input your name",
+        "required"    : false
+    },
+    {
+        "type"        : "password",
+        "name"        : "pwd",
+        "value"       : "0000",
+        "data"        : [],
+        "label"       : "Password",
+        "placeholder" : "please input your password",
+        "required"    : false
+    },
+    {
+        "type"        : "text",
+        "name"        : "frist_name",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "Name",
+        "placeholder" : "please input your password",
+        "required"    : false
+    },
+    {
+        "type"        : "number",
+        "name"        : "age",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "Age",
+        "placeholder" : "please input your age",
+        "required"    : false
+    },
+    {
+        "type"        : "mail",
+        "name"        : "mail",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "e-mail",
+        "placeholder" : "please input your mail",
+        "required"    : false
+    },
+    {
+        "type"        : "radio",
+        "name"        : "radio",
+        "value"       : "",
+        "data"        : [
+            {
+                "id"       : "1",
+                "value"    : "radio 1",
+                "name"     : "radio 1"
+            },
+            {
+                "id"       : "2",
+                "value"    : "radio 2",
+                "name"     : "radio 2"
+            },
+            {
+                "id"       : "3",
+                "value"    : "radio 3",
+                "name"     : "radio 3"
+            },
+            {
+                "id"       : "4",
+                "value"    : "radio 4",
+                "name"     : "radio 4"
+            }
+        ],
+        "label"       : "e-mail",
+        "placeholder" : "please input your mail",
+        "required"    : false
+    },
+    {
+        "type"        : "textarea",
+        "name"        : "content",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "123",
+        "placeholder" : "please input your age",
+        "required"    : false
+    },
+    {
+        "type"        : "select",
+        "name"        : "select1",
+        "value"       : "",
+        "data"        : [
+            {
+                "value" : "Taipei City",
+                "name"  : "Taipei City"
+            },
+            {
+                "value" : "New Taipei City",
+                "name"  : "New Taipei City"
+            },
+            {
+                "value" : "Taoyuan City",
+                "name"  : "Taoyuan City"
+            },
+            {
+                "value" : "Hsinchu County",
+                "name"  : "Hsinchu County"
+            },
+            {
+                "value" : "Miaoli County",
+                "name"  : "Miaoli County"
+            },
+            {
+                "value" : "Taichung City",
+                "name"  : "Taichung City"
+            }
+        ],
+        "label"       : "Like1",
+        "placeholder" : "City / County",
+        "required"    : false,
+        "children"    : [
+            {
+                "key"            : "Taipei City",
+                "type"           : "select",
+                "name"           : "district",
+                "value"          : "",
+                "data"           : [
+                    {
+                        "value" : "Songshan",
+                        "name"  : "Songshan"
+                    },
+                    {
+                        "value" : "Xinyi",
+                        "name"  : "Xinyi"
+                    },
+                    {
+                        "value" : "Da’an",
+                        "name"  : "Da’an"
+                    },
+                    {
+                        "value" : "Zhongshan",
+                        "name"  : "Zhongshan"
+                    },
+                    {
+                        "value" : "Zhongzheng",
+                        "name"  : "Zhongzheng"
+                    },
+                    {
+                        "value" : "Datong",
+                        "name"  : "Datong"
+                    },
+                    {
+                        "value" : "Wanhua",
+                        "name"  : "Wanhua"
+                    },
+                    {
+                        "value" : "Nangang",
+                        "name"  : "Nangang"
+                    },
+                    {
+                        "value" : "Neihu",
+                        "name"  : "Neihu"
+                    },
+                    {
+                        "value" : "Shilin",
+                        "name"  : "Shilin"
+                    },
+                    {
+                        "value" : "Beitou",
+                        "name"  : "Beitou"
+                    }
+                ],
+                "label"          : "",
+                "placeholder"    : "District",
+                "required"       : false
+            },
+            {
+                "key"            : "New Taipei City",
+                "type"           : "select",
+                "name"           : "district",
+                "value"          : "",
+                "data"           : [
+                    {
+                        "value" : "Banqiao",
+                        "name"  : "Banqiao"
+                    },
+                    {
+                        "value" : "Sanchong",
+                        "name"  : "Sanchong"
+                    },
+                    {
+                        "value" : "Zhonghe",
+                        "name"  : "Zhonghe"
+                    },
+                    {
+                        "value" : "Yonghe",
+                        "name"  : "Yonghe"
+                    },
+                    {
+                        "value" : "Xinzhuang",
+                        "name"  : "Xinzhuang"
+                    },
+                    {
+                        "value" : "Xindian",
+                        "name"  : "Xindian"
+                    },
+                    {
+                        "value" : "Tucheng",
+                        "name"  : "Tucheng"
+                    },
+                    {
+                        "value" : "Luzhou",
+                        "name"  : "Luzhou"
+                    },
+                    {
+                        "value" : "Xizhi",
+                        "name"  : "Xizhi"
+                    },
+                    {
+                        "value" : "Shulin",
+                        "name"  : "Shulin"
+                    },
+                    {
+                        "value" : "Danshui",
+                        "name"  : "Danshui"
+                    },
+                    {
+                        "value" : "Yingge",
+                        "name"  : "Yingge"
+                    },
+                    {
+                        "value" : "Sanxia",
+                        "name"  : "Sanxia"
+                    },
+                    {
+                        "value" : "Ruifang",
+                        "name"  : "Ruifang"
+                    },
+                    {
+                        "value" : "Wugu",
+                        "name"  : "Wugu"
+                    },
+                    {
+                        "value" : "Taishan",
+                        "name"  : "Taishan"
+                    },
+                    {
+                        "value" : "Linkou",
+                        "name"  : "Linkou"
+                    },
+                    {
+                        "value" : "Shenkeng",
+                        "name"  : "Shenkeng"
+                    },
+                    {
+                        "value" : "Shiding",
+                        "name"  : "Shiding"
+                    },
+                    {
+                        "value" : "Pinglin",
+                        "name"  : "Pinglin"
+                    },
+                    {
+                        "value" : "Sanzhi",
+                        "name"  : "Sanzhi"
+                    },
+                    {
+                        "value" : "Shimen",
+                        "name"  : "Shimen"
+                    },
+                    {
+                        "value" : "Bali",
+                        "name"  : "Bali"
+                    },
+                    {
+                        "value" : "Pingxi",
+                        "name"  : "Pingxi"
+                    },
+                    {
+                        "value" : "Shuangxi",
+                        "name"  : "Shuangxi"
+                    },
+                    {
+                        "value" : "Gongliao",
+                        "name"  : "Gongliao"
+                    },
+                    {
+                        "value" : "Jinshan",
+                        "name"  : "Jinshan"
+                    },
+                    {
+                        "value" : "Wanli",
+                        "name"  : "Wanli"
+                    },
+                    {
+                        "value" : "Wulai",
+                        "name"  : "Wulai"
+                    }
+                ],
+                "label"          : "",
+                "placeholder"    : "District",
+                "required"       : false
+            },
+            {
+                "key"            : "Taoyuan City",
+                "type"           : "select",
+                "name"           : "district",
+                "value"          : "",
+                "data"           : [
+                    {
+                        "value" : "Taoyuan",
+                        "name"  : "Taoyuan"
+                    },
+                    {
+                        "value" : "Zhongli",
+                        "name"  : "Zhongli"
+                    },
+                    {
+                        "value" : "Daxi",
+                        "name"  : "Daxi"
+                    },
+                    {
+                        "value" : "Yangmei",
+                        "name"  : "Yangmei"
+                    },
+                    {
+                        "value" : "Luzhu",
+                        "name"  : "Luzhu"
+                    },
+                    {
+                        "value" : "Dayuan",
+                        "name"  : "Dayuan"
+                    },
+                    {
+                        "value" : "Guishan",
+                        "name"  : "Guishan"
+                    },
+                    {
+                        "value" : "Bade",
+                        "name"  : "Bade"
+                    },
+                    {
+                        "value" : "Longtan",
+                        "name"  : "Longtan"
+                    },
+                    {
+                        "value" : "Pingzhen",
+                        "name"  : "Pingzhen"
+                    },
+                    {
+                        "value" : "Guishan",
+                        "name"  : "Guishan"
+                    },
+                    {
+                        "value" : "Guanyin",
+                        "name"  : "Guanyin"
+                    },
+                    {
+                        "value" : "Fuxing",
+                        "name"  : "Fuxing"
+                    }
+                ],
+                "label"          : "",
+                "placeholder"    : "District",
+                "required"       : false
+            }
+        ]
+    },
+    {
+        "type"        : "select",
+        "name"        : "select2",
+        "value"       : "",
+        "data"        : [
+            {
+                "value" : "option1",
+                "name"  : "Option 1"
+            },
+            {
+                "value" : "option2",
+                "name"  : "Option 2"
+            },
+            {
+                "value" : "option3",
+                "name"  : "Option 3"
+            },
+            {
+                "value" : "option4",
+                "name"  : "Option 4"
+            }
+        ],
+        "label"       : "Like2",
+        "placeholder" : "please input your like",
+        "required"    : false,
+        "children"    : [
+            {
+                "type"           : "text",
+                "name"           : "option1",
+                "value"          : "",
+                "data"           : [],
+                "label"          : "",
+                "placeholder"    : "children_test2-1",
+                "required"       : false
+            },
+            {
+                "type"           : "text",
+                "name"           : "option2",
+                "value"          : "",
+                "data"           : [],
+                "label"          : "",
+                "placeholder"    : "children_test2-2",
+                "required"       : false
+            },
+            {
+                "type"           : "text",
+                "name"           : "option3",
+                "value"          : "",
+                "data"           : [],
+                "label"          : "",
+                "placeholder"    : "children_test2-3",
+                "required"       : false
+            }
+        ]
+    },
+    {
+        "type"        : "number",
+        "name"        : "no1",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "Number",
+        "placeholder" : "please input your age",
+        "required"    : false
+    },
+    {
+        "type"        : "date",
+        "name"        : "startDate",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "Start date",
+        "placeholder" : "YYYY/MM/DD",
+        "required"    : false,
+        "showTime"    : false
+    },
+    {
+        "type"        : "date",
+        "name"        : "endDate",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "End date",
+        "placeholder" : "YYYY/MM/DD hh:mm:dd",
+        "required"    : false,
+        "showTime"    : true
+    },
+    {
+        "type"        : "multiple",
+        "name"        : "multiple",
+        "value"       : [],
+        "data"        : [],
+        "label"       : "",
+        "placeholder" : "please input your option name",
+        "required"    : false
+    }
+]

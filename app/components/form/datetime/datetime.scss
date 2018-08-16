@@ -1,0 +1,190 @@
+.datetime-time{
+    width     : 100%;
+    max-width : 320px;
+    position  : relative;
+    outline   : none;
+    >.input-box{
+        position         : relative;
+        align-items      : center;
+        padding-right    : 50px;
+        &.false{
+            background      : #ffe4e4;
+        }
+        .datetime-icon{
+            width             : 30px;
+            height            : 30px;
+            display           : flex;
+            align-items       : center;
+            position          : absolute;
+            right             : 10px;
+            justify-content   : center;
+            color             : #999;
+            font-size         : 1.1em;
+            cursor            : pointer;
+        }
+    }
+    .calendar-wrap{
+        width        : 100%;
+        margin-top   : 10px;
+        position     : absolute;
+        z-index      : 5;
+        left         : 0px;
+        background   : #fff;
+        box-shadow   : 0px 3px 10px rgba(0, 0, 0, 0.2);
+        display      : none;
+        border-radius: 4px;
+        >.calendar-head{
+            width             : 100%;
+            height            : 45px;
+            padding           : 0px 10px;
+            display           : flex;
+            align-items       : center;
+            justify-content   : space-between;
+            border-bottom     : 1px solid #e1e1e1; 
+            .calendar-head-btn{
+                width          : 40px;
+                height         : 100%;
+                display        : flex;
+                align-items    : center;
+                justify-content: center;
+                cursor         : pointer;
+                font-size      : 0.9em;
+            }
+            .calendar-title{
+                width          : 100%;
+                text-align     : center;
+            }
+        }
+
+        >.calendar-main{
+            width       : 100%;
+            display     : flex;
+            flex-wrap   : wrap;
+            padding     : 5px; 
+            ul{
+                width      : 100%;
+                display    : flex;
+                flex-wrap  : wrap;
+                >li{
+                    width            : 14.285%;
+                    height           : 40px;
+                    display          : inline-flex;
+                    font-size        : 0.7em;
+                    align-items      : center;
+                    justify-content  : center;
+                    .touch-block{
+                        width          : 30px;
+                        height         : 30px;
+                        display        : flex;
+                        align-items    : center;
+                        justify-content: center;
+                        position       : relative;
+                        z-index        : 2;
+                    }
+                }
+            }
+            >.calendar-main-head{
+                width: 100%;
+            }
+            >.calendar-main-con{
+                ul{
+                    >li{
+                        cursor: pointer;
+                        &:after{
+                            content         : "";
+                            width           : 30px;
+                            height          : 30px;
+                            background      : #f3f3f3;
+                            position        : absolute;
+                            z-index         : 1;
+                            border-radius   : 100px; 
+                        }
+                        &:hover{
+                            &:after{
+                                background    : #f1f1f1;
+                            }
+                            .touch-block{
+                                color         : #727cf5;
+                            }
+                        }
+                        &.active{
+                            .touch-block{
+                                color: #fff;
+                            }
+                            &:after{
+                                background    : #727cf5; 
+                            }
+                        }
+                        &.pointerEventsNone{
+                            pointer-events : none;
+                            opacity: 0.3;
+                        }
+                    }
+                }
+            }
+        }
+        >.calendar-time{
+            width         : 100%;
+            display       : flex;
+            margin-top    : 0px;
+            border-top    : 1px solid #e1e1e1;  
+            >ul{
+                width        : 100%;
+                >li{
+                    width          : 33.3333%;
+                    display        : inline-flex;
+                    padding        : 10px;
+                    .input-box{
+                        min-height     : 35px;
+                        padding-right  : 30px;
+                        border         : 1px solid #ccc;
+                        border-radius  : 4px;
+                        position       : relative;
+                        input{
+                            text-align: center;
+                            font-size : 1em;
+                        }
+                        >.calendar-time-btn-wrap{
+                            width      : 30px;
+                            height     : 100%; 
+                            background : #ffa500;
+                            position   : absolute;
+                            top        : 0px;
+                            right      : 0px;
+                            flex-wrap  : wrap;
+                            .calendar-time-btn{
+                                width            : 100%;
+                                height           : 50%;
+                                display          : flex;
+                                align-items      : center;
+                                justify-content  : center;
+                                color            : #fff;
+                                &.calendar-time-btn-prev{
+                                    border-bottom   : 1px solid #ec9900;
+                                }
+                                &.calendar-time-btn-next{
+                                    border-top      : 1px solid #ffbf4a;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.true{
+        .calendar-wrap{
+            display       : block;
+        }
+        .datetime-icon{
+            color         : #727cf5;
+        }
+    }
+    &.overflow_true{
+        .calendar-wrap{
+            top           : initial;
+            bottom        : 55px;
+        }
+    }
+}

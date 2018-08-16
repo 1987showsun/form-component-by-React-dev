@@ -2,7 +2,7 @@
   "name": "react-form-beta",
   "version": "1.0.0",
   "main": "commonjs/index.js",
-  "description": "React popup",
+  "description": "React form",
   "author": "showsun",
   "license": "ISC",
   "scripts": {

@@ -27,9 +27,10 @@ export default class Index extends React.Component{
         return(
             <div className="input-box">
                 <textarea
+                    style      = { {"resize": "none"} }
                     name       = { this.state.name }
                     value      = { this.state[this.state.name] } 
-                    onChange   = {this.handleChange.bind(this)}
+                    onChange   = { this.handleChange.bind(this) }
                 />
             </div>
         );

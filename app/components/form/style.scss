@@ -1,4 +1,8 @@
 form{
+    &.sun-dev-form-component{
+        width: 100%;
+        max-width: 600px;
+    }
     .form-ul{
         width           : 100%;
         padding         : 5px; 
@@ -44,6 +48,9 @@ form{
         height          : 44px;
         font-size       : 0.9em;
         letter-spacing  : 0.1em;
+        &.error{
+            background: #ffe4e4;
+        }
     }
     button,.formBtn{
         width           : 100%;
@@ -89,8 +96,21 @@ form{
         min-height : 44px;
         display    : flex;
         background : #fff; 
+        position   : relative;
+        align-items: center;
         &.false{
             background: #ffe4e4;
+        }
+        .input-box-msg{
+            padding     : 5px;
+            position    : absolute;
+            right       : 10px;
+            display     : block;
+            font-size   : 0.6em;
+            background  : #ffb258;
+            color       : #fff;
+            border-radius : 4px;
+            font-weight   : 600;
         }
     }
 }

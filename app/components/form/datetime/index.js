@@ -111,10 +111,6 @@ export default class Index extends React.Component{
         return infoValidation;
     }
 
-    test(){
-
-    }
-
     render(){
         return(
             <div ref={this.datetime} className={`datetime-time ${this.state.itemWrapStatus} ${this.state.overflow}`} onBlur={this.itemWrapStatus.bind(this,'blur')} onFocus={this.itemWrapStatus.bind(this,'focus')} tabIndex={0}>
@@ -143,26 +139,3 @@ export default class Index extends React.Component{
         );
     }
 }
-
-/*const renderViewSet = ( name ) =>{
-    //let setTop = false;
-    $('.datetime-time').off().on({
-        click : function(){
-            let setTop = false;
-            const _class = $(this).attr('class').split(' ');
-            const _windowStatus = _class.some((item)=>{return item=="true"});
-            if( _windowStatus ){
-                const _coordinate           = $(this).find('>.calendar-wrap').offset().top;
-                const _calendar_wrap_h      = $(this).find('>.calendar-wrap').outerHeight();
-                const _total_end_coordinate = _coordinate + _calendar_wrap_h;
-                const _this_h               = $(this).parents().find('.form-ul').innerHeight();
-
-                if( _total_end_coordinate>_this_h ){
-                    setTop = true;
-                }
-            }
-            return setTop
-        }
-    })
-    return setTop;
-}*/

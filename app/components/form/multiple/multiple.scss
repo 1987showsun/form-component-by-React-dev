@@ -1,7 +1,8 @@
 .multiple-wrap{
     width      : 100%;
     position   : relative;
-    outline    : none; 
+    outline    : none;
+    display    : flex; 
     >.input-box{
         flex-wrap: wrap;
         .multiple-selected-option{
@@ -46,7 +47,7 @@
         box-shadow   : 0px 3px 10px rgba(0, 0, 0, 0.2);
         overflow     : auto;
         border-radius: 4px;
-        visibility   : hidden;
+        display      : none;
         .multiple-select-option{
             min-height     : 40px;
             padding        : 5px 10px;
@@ -87,7 +88,13 @@
     }
     &.true{
         >.multiple-select{
-            visibility: inherit;
+            display : block;
+        }
+    }
+    &.overflow_true{
+        >.multiple-select{
+            margin-top   : -160px;
+            box-shadow   : 0px -2px 6px rgba(0, 0, 0, 0.2);
         }
     }
 }

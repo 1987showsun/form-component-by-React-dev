@@ -7,7 +7,6 @@ export default class Item extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            name            : props.name,
             initVal         : props.initVal,
             optionData      : props.optionData
         }
@@ -19,7 +18,6 @@ export default class Item extends React.Component{
 
     componentWillReceiveProps(nextProps) {
         this.setState({
-            name            : nextProps.name,
             initVal         : nextProps.initVal,
             optionData      : nextProps.optionData
         })
@@ -28,13 +26,13 @@ export default class Item extends React.Component{
     selected( selectedItem ){
         let initVal   = Object.assign([],this.state.initVal);
         let addStatus = initVal.some(item=>{
-            return item['id'] == selectedItem['id'];
+            return item['value'] == selectedItem['value'];
         })
         if( !addStatus ){
-            initVal = [ ...initVal , {'id' : selectedItem['id'], 'value' : selectedItem['value']} ];
+            initVal = [ ...initVal , {'value' : selectedItem['value'], 'name' : selectedItem['name']} ];
         }else{
             initVal.map((item,i)=>{
-                if( item['id']==selectedItem['id'] ){
+                if( item['value']==selectedItem['value'] ){
                     return initVal.splice(i,1);
                 }
             })
@@ -49,7 +47,7 @@ export default class Item extends React.Component{
     checkout( item ){
         let initVal     = this.state.initVal;
         let selected    = initVal.some((initValItem)=>{
-            return initValItem['id'] == item['id'];
+            return initValItem['value'] == item['value'];
         })
         
         return selected==true? 'checked' : '';
@@ -64,7 +62,7 @@ export default class Item extends React.Component{
                             this.state.optionData.map((item,i)=>{
                                 return(
                                     <div key={i} className={`multiple-select-option ${this.checkout(item)}`} onClick={this.selected.bind(this, item )}>
-                                        {item['value']}
+                                        {item['name']}
                                         <FaCheckCircle />
                                     </div>
                                 );

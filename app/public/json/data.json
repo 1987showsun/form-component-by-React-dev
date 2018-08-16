@@ -1,48 +1,48 @@
 {
   "multiple" : [
     {
-      "id"    : "1",
-      "value" : "Sun"
+      "value"    : "1",
+      "name"     : "Sun"
     },
     {
-      "id"    : "2",
-      "value" : "Panpan"
+      "value"    : "2",
+      "name"     : "Panpan"
     },
     {
-      "id"    : "3",
-      "value" : "Jane"
+      "value"    : "3",
+      "name"     : "Jane"
     },
     {
-      "id"    : "4",
-      "value" : "Zoe"
+      "value"    : "4",
+      "name"     : "Zoe"
     },
     {
-      "id"    : "5",
-      "value" : "Donnie"
+      "value"    : "5",
+      "name"     : "Donnie"
     },
     {
-      "id"    : "6",
-      "value" : "Kokin"
+      "value"    : "6",
+      "name"     : "Kokin"
     },
     {
-      "id"    : "7",
-      "value" : "Elva"
+      "value"    : "7",
+      "name"     : "Elva"
     },
     {
-      "id"    : "8",
-      "value" : "Bob"
+      "value"    : "8",
+      "name"     : "Bob"
     },
     {
-      "id"    : "9",
-      "value" : "Angel"
+      "value"    : "9",
+      "name"     : "Angel"
     },
     {
-      "id"    : "10",
-      "value" : "Layman"
+      "value"    : "10",
+      "name"     : "Layman"
     },
     {
-      "id"    : "11",
-      "value" : "Elesa"
+      "value"    : "11",
+      "name"     : "Elesa"
     }
   ]
 }

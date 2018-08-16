@@ -58,7 +58,7 @@ export default class Test extends React.Component{
                 return(
                     <Multiple 
                         key            = {i}
-                        required       = { item['required'] || "false" }
+                        required       = { item['required'] || false }
                         name           = { item['name'] }
                         initVal        = { item['value'] }
                         optionData     = { item['data'] }
@@ -73,7 +73,7 @@ export default class Test extends React.Component{
                 return(
                     <Textarea 
                         key            = {i}
-                        required       = { item['required'] || "false" }
+                        required       = { item['required'] || false }
                         type           = { item['type'] }
                         name           = { item['name'] } 
                         value          = { item['value'] } 
@@ -87,7 +87,7 @@ export default class Test extends React.Component{
                 return(
                     <Select 
                         key            = {i}
-                        required       = { item['required'] || "false" }
+                        required       = { item['required'] || false }
                         type           = { item['type'] }
                         name           = { item['name'] } 
                         value          = { item['value'] } 
@@ -102,7 +102,7 @@ export default class Test extends React.Component{
                 return(
                     <Radio 
                         key            = {i}
-                        required       = { item['required'] || "false" }
+                        required       = { item['required'] || false }
                         type           = { item['type'] }
                         name           = { item['name'] }
                         value          = { item['value'] }
@@ -117,7 +117,7 @@ export default class Test extends React.Component{
                 return(
                     <Datetime
                         key            = {i}
-                        required       = { item['required'] || "false" }
+                        required       = { item['required'] || false }
                         name           = { item['name'] }
                         type           = { item['type'] }
                         value          = { item['value'] }
@@ -132,12 +132,13 @@ export default class Test extends React.Component{
                 return(
                     <Input
                         key            = {i}
-                        required       = { item['required'] || "false" }
-                        type           = { item['type']}
-                        name           = { item['name']}
-                        value          = { item['value']}
-                        placeholder    = { item['placeholder']}
-                        result         = { this.result.bind(this)}
+                        required       = { item['required']    || false }
+                        type           = { item['type'] }
+                        name           = { item['name'] }
+                        value          = { item['value'] }
+                        placeholder    = { item['placeholder'] }
+                        doubleCheck    = { item['doubleCheck'] || false }
+                        result         = { this.result.bind(this) }
                     />
                 );
                 break;
@@ -171,7 +172,7 @@ export default class Test extends React.Component{
 
     render(){
         return(
-            <form onSubmit={ this.onSubmit.bind(this) }>
+            <form className={`sun-dev-form-component `} onSubmit={ this.onSubmit.bind(this) }>
                 <ul className="form-ul">
                     {
                         this.state.data.map((item,i)=>{

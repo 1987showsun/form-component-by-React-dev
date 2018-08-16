@@ -11,11 +11,12 @@
     {
         "type"        : "password",
         "name"        : "pwd",
-        "value"       : "0000",
+        "value"       : "",
         "data"        : [],
         "label"       : "Password",
-        "placeholder" : "please input your password",
-        "required"    : false
+        "placeholder" : "password",
+        "required"    : false,
+        "doubleCheck" : true
     },
     {
         "type"        : "text",
@@ -421,7 +422,7 @@
     },
     {
         "type"        : "number",
-        "name"        : "no1",
+        "name"        : "number1",
         "value"       : "",
         "data"        : [],
         "label"       : "Number",
@@ -451,7 +452,16 @@
     {
         "type"        : "multiple",
         "name"        : "multiple",
-        "value"       : [],
+        "value"       : [
+            {
+                "value"    : "1",
+                "name"     : "Sun"
+            },
+            {
+                "value"    : "2",
+                "name"     : "Panpan"
+            }
+        ],
         "data"        : [],
         "label"       : "",
         "placeholder" : "please input your option name",

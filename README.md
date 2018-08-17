@@ -115,4 +115,4 @@
 | placeholder             | string                     | placeholder: "input placeholder"                                                             |
 | required                | boolean                    | required   : true / false                                                                    |
 | showTime                | boolean                    | showTime   : true / false                                                                    |
-| children                | Object                     | children   : [{ "key": "",<br/> "type":"",<br/> "name":"",<br/> "value":[{}]/"",<br/> "data":[{}],<br/> "label":"",<br/> "placeholder":"",<br/> "required": true/false,<br/> "showTime":true/false<br/> }]|
+| children                | Object                     | children   : [{<br/> "key": "",<br/> "type":"",<br/> "name":"",<br/> "value":[{}]/"",<br/> "data":[{}],<br/> "label":"",<br/> "placeholder":"",<br/> "required": true/false,<br/> "showTime":true/false<br/> }]|

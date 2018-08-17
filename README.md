@@ -13,7 +13,8 @@
 <a href="https://1987showsun.github.io/form-component-by-React-dev/">Demo</a>
 
 ## Use direction Object
-```js
+
+```json
   [
     {
       "type"        : "text",                   // html input type  ex: text / password / number / mail / radio / textarea / select / date / multiple

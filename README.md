@@ -14,7 +14,7 @@
 
 ## Use direction Object
 
-```json
+```js
   [
     {
       "type"        : "text",                   // html input type  ex: text / password / number / mail / radio / textarea / select / date / multiple
@@ -106,6 +106,7 @@
 
 ## Use direction Object Api
 | Api                     | type                       | method                                                                                       |
+|-------------------------|----------------------------|----------------------------------------------------------------------------------------------|
 | type                    | string                     | type       : "text / password / number / mail / radio / textarea / select / date / multiple" |
 | name                    | string                     | name       : "input name (only))"                                                            |
 | value                   | string / Object            | value      : "test value"  / [{ "value":"", "name":"" }]                                     |

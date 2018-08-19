@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 84);
+/******/ 	return __webpack_require__(__webpack_require__.s = 87);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -84,9 +84,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 if (__webpack_require__.i({"NODE_ENV_REDUX_BUILD":true,"NODE_ENV_CLOSE_LOG":false}).NODE_ENV === 'production') {
-  module.exports = __webpack_require__(76);
+  module.exports = __webpack_require__(78);
 } else {
-  module.exports = __webpack_require__(75);
+  module.exports = __webpack_require__(77);
 }
 
 
@@ -98,7 +98,7 @@ if (__webpack_require__.i({"NODE_ENV_REDUX_BUILD":true,"NODE_ENV_CLOSE_LOG":fals
 
 
 var bind = __webpack_require__(15);
-var isBuffer = __webpack_require__(67);
+var isBuffer = __webpack_require__(69);
 
 /*global toString:true*/
 
@@ -487,7 +487,7 @@ function toComment(sourceMap) {
 /***/ (function(module, exports, __webpack_require__) {
 
 // THIS FILE IS AUTO GENERATED
-const { GenIcon } = __webpack_require__(73)
+const { GenIcon } = __webpack_require__(75)
 module.exports.Fa500px = function (props) {
   return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 448 512"},"child":[{"tag":"path","attr":{"d":"M103.3 344.3c-6.5-14.2-6.9-18.3 7.4-23.1 25.6-8 8 9.2 43.2 49.2h.3v-93.9c1.2-50.2 44-92.2 97.7-92.2 53.9 0 97.7 43.5 97.7 96.8 0 63.4-60.8 113.2-128.5 93.3-10.5-4.2-2.1-31.7 8.5-28.6 53 0 89.4-10.1 89.4-64.4 0-61-77.1-89.6-116.9-44.6-23.5 26.4-17.6 42.1-17.6 157.6 50.7 31 118.3 22 160.4-20.1 24.8-24.8 38.5-58 38.5-93 0-35.2-13.8-68.2-38.8-93.3-24.8-24.8-57.8-38.5-93.3-38.5s-68.8 13.8-93.5 38.5c-.3.3-16 16.5-21.2 23.9l-.5.6c-3.3 4.7-6.3 9.1-20.1 6.1-6.9-1.7-14.3-5.8-14.3-11.8V20c0-5 3.9-10.5 10.5-10.5h241.3c8.3 0 8.3 11.6 8.3 15.1 0 3.9 0 15.1-8.3 15.1H130.3v132.9h.3c104.2-109.8 282.8-36 282.8 108.9 0 178.1-244.8 220.3-310.1 62.8zm63.3-260.8c-.5 4.2 4.6 24.5 14.6 20.6C306 56.6 384 144.5 390.6 144.5c4.8 0 22.8-15.3 14.3-22.8-93.2-89-234.5-57-238.3-38.2zM393 414.7C283 524.6 94 475.5 61 310.5c0-12.2-30.4-7.4-28.9 3.3 24 173.4 246 256.9 381.6 121.3 6.9-7.8-12.6-28.4-20.7-20.4zM213.6 306.6c0 4 4.3 7.3 5.5 8.5 3 3 6.1 4.4 8.5 4.4 3.8 0 2.6.2 22.3-19.5 19.6 19.3 19.1 19.5 22.3 19.5 5.4 0 18.5-10.4 10.7-18.2L265.6 284l18.2-18.2c6.3-6.8-10.1-21.8-16.2-15.7L249.7 268c-18.6-18.8-18.4-19.5-21.5-19.5-5 0-18 11.7-12.4 17.3L234 284c-18.1 17.9-20.4 19.2-20.4 22.6z"}}]})(props);
 };
@@ -3507,7 +3507,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(83);
+var	fixUrls = __webpack_require__(86);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -4142,7 +4142,7 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(68)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(70)))
 
 /***/ }),
 /* 10 */
@@ -4535,7 +4535,7 @@ module.exports = ExecutionEnvironment;
  * 
  */
 
-var isTextNode = __webpack_require__(66);
+var isTextNode = __webpack_require__(68);
 
 /*eslint-disable no-bitwise */
 
@@ -15063,7 +15063,7 @@ return jQuery;
 if (__webpack_require__.i({"NODE_ENV_REDUX_BUILD":true,"NODE_ENV_CLOSE_LOG":false}).NODE_ENV !== 'production') {
   var invariant = __webpack_require__(6);
   var warning = __webpack_require__(10);
-  var ReactPropTypesSecret = __webpack_require__(69);
+  var ReactPropTypesSecret = __webpack_require__(71);
   var loggedTypeFailures = {};
 }
 
@@ -15130,15 +15130,15 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _reactDom = __webpack_require__(72);
+var _reactDom = __webpack_require__(74);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _test = __webpack_require__(54);
+var _test = __webpack_require__(55);
 
 var _test2 = _interopRequireDefault(_test);
 
-__webpack_require__(82);
+__webpack_require__(85);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -15182,7 +15182,7 @@ _reactDom2.default.render(_react2.default.createElement(Index, null), document.g
 /* 23 */
 /***/ (function(module, exports) {
 
-module.exports = [{"type":"text","name":"username","value":"sun","data":[],"label":"Username","placeholder":"please input your name","required":false},{"type":"password","name":"pwd","value":"","data":[],"label":"Password","placeholder":"password","required":false,"doubleCheck":true},{"type":"text","name":"frist_name","value":"","data":[],"label":"Name","placeholder":"please input your password","required":false},{"type":"number","name":"age","value":"","data":[],"label":"Age","placeholder":"please input your age","required":false},{"type":"mail","name":"mail","value":"","data":[],"label":"e-mail","placeholder":"please input your mail","required":false},{"type":"radio","name":"radio","value":"","data":[{"id":"1","value":"radio 1","name":"radio 1"},{"id":"2","value":"radio 2","name":"radio 2"},{"id":"3","value":"radio 3","name":"radio 3"},{"id":"4","value":"radio 4","name":"radio 4"}],"label":"e-mail","placeholder":"please input your mail","required":false},{"type":"textarea","name":"content","value":"","data":[],"label":"123","placeholder":"please input your age","required":false},{"type":"select","name":"select1","value":"","data":[{"value":"Taipei City","name":"Taipei City"},{"value":"New Taipei City","name":"New Taipei City"},{"value":"Taoyuan City","name":"Taoyuan City"},{"value":"Hsinchu County","name":"Hsinchu County"},{"value":"Miaoli County","name":"Miaoli County"},{"value":"Taichung City","name":"Taichung City"}],"label":"Like1","placeholder":"City / County","required":false,"children":[{"key":"Taipei City","type":"select","name":"district","value":"","data":[{"value":"Songshan","name":"Songshan"},{"value":"Xinyi","name":"Xinyi"},{"value":"Da’an","name":"Da’an"},{"value":"Zhongshan","name":"Zhongshan"},{"value":"Zhongzheng","name":"Zhongzheng"},{"value":"Datong","name":"Datong"},{"value":"Wanhua","name":"Wanhua"},{"value":"Nangang","name":"Nangang"},{"value":"Neihu","name":"Neihu"},{"value":"Shilin","name":"Shilin"},{"value":"Beitou","name":"Beitou"}],"label":"","placeholder":"District","required":false},{"key":"New Taipei City","type":"select","name":"district","value":"","data":[{"value":"Banqiao","name":"Banqiao"},{"value":"Sanchong","name":"Sanchong"},{"value":"Zhonghe","name":"Zhonghe"},{"value":"Yonghe","name":"Yonghe"},{"value":"Xinzhuang","name":"Xinzhuang"},{"value":"Xindian","name":"Xindian"},{"value":"Tucheng","name":"Tucheng"},{"value":"Luzhou","name":"Luzhou"},{"value":"Xizhi","name":"Xizhi"},{"value":"Shulin","name":"Shulin"},{"value":"Danshui","name":"Danshui"},{"value":"Yingge","name":"Yingge"},{"value":"Sanxia","name":"Sanxia"},{"value":"Ruifang","name":"Ruifang"},{"value":"Wugu","name":"Wugu"},{"value":"Taishan","name":"Taishan"},{"value":"Linkou","name":"Linkou"},{"value":"Shenkeng","name":"Shenkeng"},{"value":"Shiding","name":"Shiding"},{"value":"Pinglin","name":"Pinglin"},{"value":"Sanzhi","name":"Sanzhi"},{"value":"Shimen","name":"Shimen"},{"value":"Bali","name":"Bali"},{"value":"Pingxi","name":"Pingxi"},{"value":"Shuangxi","name":"Shuangxi"},{"value":"Gongliao","name":"Gongliao"},{"value":"Jinshan","name":"Jinshan"},{"value":"Wanli","name":"Wanli"},{"value":"Wulai","name":"Wulai"}],"label":"","placeholder":"District","required":false},{"key":"Taoyuan City","type":"select","name":"district","value":"","data":[{"value":"Taoyuan","name":"Taoyuan"},{"value":"Zhongli","name":"Zhongli"},{"value":"Daxi","name":"Daxi"},{"value":"Yangmei","name":"Yangmei"},{"value":"Luzhu","name":"Luzhu"},{"value":"Dayuan","name":"Dayuan"},{"value":"Guishan","name":"Guishan"},{"value":"Bade","name":"Bade"},{"value":"Longtan","name":"Longtan"},{"value":"Pingzhen","name":"Pingzhen"},{"value":"Guishan","name":"Guishan"},{"value":"Guanyin","name":"Guanyin"},{"value":"Fuxing","name":"Fuxing"}],"label":"","placeholder":"District","required":false}]},{"type":"select","name":"select2","value":"","data":[{"value":"option1","name":"Option 1"},{"value":"option2","name":"Option 2"},{"value":"option3","name":"Option 3"},{"value":"option4","name":"Option 4"}],"label":"Like2","placeholder":"please input your like","required":false,"children":[{"type":"text","name":"option1","value":"","data":[],"label":"","placeholder":"children_test2-1","required":false},{"type":"text","name":"option2","value":"","data":[],"label":"","placeholder":"children_test2-2","required":false},{"type":"text","name":"option3","value":"","data":[],"label":"","placeholder":"children_test2-3","required":false}]},{"type":"number","name":"number1","value":"","data":[],"label":"Number","placeholder":"please input your age","required":false},{"type":"date","name":"startDate","value":"","data":[],"label":"Start date","placeholder":"YYYY/MM/DD","required":false,"showTime":false},{"type":"date","name":"endDate","value":"","data":[],"label":"End date","placeholder":"YYYY/MM/DD hh:mm:dd","required":false,"showTime":true},{"type":"multiple","name":"multiple","value":[{"value":"1","name":"Sun"},{"value":"2","name":"Panpan"}],"data":[],"label":"","placeholder":"please input your option name","required":false}]
+module.exports = [{"type":"text","name":"username","value":"sun","data":[],"label":"Username","placeholder":"please input your name","required":{"switch":false,"msg":""}},{"type":"password","name":"pwd","value":"","data":[],"label":"Password","placeholder":"password","required":{"switch":true,"msg":"Password cannot be left blank"},"doubleCheck":true},{"type":"text","name":"frist_name","value":"","data":[],"label":"Name","placeholder":"please input your password","required":{"switch":false,"msg":""}},{"type":"number","name":"age","value":"","data":[],"label":"Age","placeholder":"please input your age","required":{"switch":false,"msg":""}},{"type":"mail","name":"mail","value":"","data":[],"label":"e-mail","placeholder":"please input your mail","required":{"switch":true,"msg":"e-mail cannot be left blank"}},{"type":"radio","name":"radio","value":"","data":[{"id":"1","value":"radio 1","name":"radio 1"},{"id":"2","value":"radio 2","name":"radio 2"},{"id":"3","value":"radio 3","name":"radio 3"},{"id":"4","value":"radio 4","name":"radio 4"}],"label":"e-mail","placeholder":"please input your mail","required":{"switch":false,"msg":""}},{"type":"textarea","name":"content","value":"","data":[],"label":"123","placeholder":"please input your age","required":{"switch":false,"msg":""}},{"type":"select","name":"select1","value":"","data":[{"value":"Taipei City","name":"Taipei City"},{"value":"New Taipei City","name":"New Taipei City"},{"value":"Taoyuan City","name":"Taoyuan City"},{"value":"Hsinchu County","name":"Hsinchu County"},{"value":"Miaoli County","name":"Miaoli County"},{"value":"Taichung City","name":"Taichung City"}],"label":"Like1","placeholder":"City / County","required":{"switch":false,"msg":""},"children":[{"key":"Taipei City","type":"select","name":"district","value":"","data":[{"value":"Songshan","name":"Songshan"},{"value":"Xinyi","name":"Xinyi"},{"value":"Da’an","name":"Da’an"},{"value":"Zhongshan","name":"Zhongshan"},{"value":"Zhongzheng","name":"Zhongzheng"},{"value":"Datong","name":"Datong"},{"value":"Wanhua","name":"Wanhua"},{"value":"Nangang","name":"Nangang"},{"value":"Neihu","name":"Neihu"},{"value":"Shilin","name":"Shilin"},{"value":"Beitou","name":"Beitou"}],"label":"","placeholder":"District","required":false},{"key":"New Taipei City","type":"select","name":"district","value":"","data":[{"value":"Banqiao","name":"Banqiao"},{"value":"Sanchong","name":"Sanchong"},{"value":"Zhonghe","name":"Zhonghe"},{"value":"Yonghe","name":"Yonghe"},{"value":"Xinzhuang","name":"Xinzhuang"},{"value":"Xindian","name":"Xindian"},{"value":"Tucheng","name":"Tucheng"},{"value":"Luzhou","name":"Luzhou"},{"value":"Xizhi","name":"Xizhi"},{"value":"Shulin","name":"Shulin"},{"value":"Danshui","name":"Danshui"},{"value":"Yingge","name":"Yingge"},{"value":"Sanxia","name":"Sanxia"},{"value":"Ruifang","name":"Ruifang"},{"value":"Wugu","name":"Wugu"},{"value":"Taishan","name":"Taishan"},{"value":"Linkou","name":"Linkou"},{"value":"Shenkeng","name":"Shenkeng"},{"value":"Shiding","name":"Shiding"},{"value":"Pinglin","name":"Pinglin"},{"value":"Sanzhi","name":"Sanzhi"},{"value":"Shimen","name":"Shimen"},{"value":"Bali","name":"Bali"},{"value":"Pingxi","name":"Pingxi"},{"value":"Shuangxi","name":"Shuangxi"},{"value":"Gongliao","name":"Gongliao"},{"value":"Jinshan","name":"Jinshan"},{"value":"Wanli","name":"Wanli"},{"value":"Wulai","name":"Wulai"}],"label":"","placeholder":"District","required":false},{"key":"Taoyuan City","type":"select","name":"district","value":"","data":[{"value":"Taoyuan","name":"Taoyuan"},{"value":"Zhongli","name":"Zhongli"},{"value":"Daxi","name":"Daxi"},{"value":"Yangmei","name":"Yangmei"},{"value":"Luzhu","name":"Luzhu"},{"value":"Dayuan","name":"Dayuan"},{"value":"Guishan","name":"Guishan"},{"value":"Bade","name":"Bade"},{"value":"Longtan","name":"Longtan"},{"value":"Pingzhen","name":"Pingzhen"},{"value":"Guishan","name":"Guishan"},{"value":"Guanyin","name":"Guanyin"},{"value":"Fuxing","name":"Fuxing"}],"label":"","placeholder":"District","required":false}]},{"type":"select","name":"select2","value":"","data":[{"value":"option1","name":"Option 1"},{"value":"option2","name":"Option 2"},{"value":"option3","name":"Option 3"},{"value":"option4","name":"Option 4"}],"label":"Like2","placeholder":"please input your like","required":{"switch":false,"msg":""},"children":[]},{"type":"number","name":"number1","value":"","data":[],"label":"Number","placeholder":"please input your age","required":{"switch":false,"msg":""}},{"type":"date","name":"startDate","value":"","data":[],"label":"Start date","placeholder":"YYYY/MM/DD","required":{"switch":false,"msg":""},"showTime":false},{"type":"date","name":"endDate","value":"","data":[],"label":"End date","placeholder":"YYYY/MM/DD hh:mm:dd","required":{"switch":false,"msg":""},"showTime":true},{"type":"multiple","name":"multiple","value":[{"value":"1","name":"Sun"},{"value":"2","name":"Panpan"}],"data":[],"label":"","placeholder":"please input your option name","required":{"switch":false,"msg":""}}]
 
 /***/ }),
 /* 24 */
@@ -16680,7 +16680,7 @@ var _time = __webpack_require__(46);
 
 var _time2 = _interopRequireDefault(_time);
 
-__webpack_require__(77);
+__webpack_require__(79);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17063,6 +17063,8 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _fa = __webpack_require__(3);
+
 var _multiple = __webpack_require__(49);
 
 var _multiple2 = _interopRequireDefault(_multiple);
@@ -17071,11 +17073,11 @@ var _input = __webpack_require__(48);
 
 var _input2 = _interopRequireDefault(_input);
 
-var _radio = __webpack_require__(51);
+var _radio = __webpack_require__(52);
 
 var _radio2 = _interopRequireDefault(_radio);
 
-var _textarea = __webpack_require__(53);
+var _textarea = __webpack_require__(54);
 
 var _textarea2 = _interopRequireDefault(_textarea);
 
@@ -17083,11 +17085,15 @@ var _datetime = __webpack_require__(45);
 
 var _datetime2 = _interopRequireDefault(_datetime);
 
-var _select = __webpack_require__(52);
+var _select = __webpack_require__(53);
 
 var _select2 = _interopRequireDefault(_select);
 
-__webpack_require__(81);
+var _note = __webpack_require__(51);
+
+var _note2 = _interopRequireDefault(_note);
+
+__webpack_require__(84);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17101,6 +17107,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 //Components
 
+
+var delayTime = void 0;
 
 var Test = function (_React$Component) {
     _inherits(Test, _React$Component);
@@ -17123,19 +17131,69 @@ var Test = function (_React$Component) {
         _this.state = {
             data: data,
             formObject: formObject,
-            labelSwitch: labelSwitch
+            labelSwitch: labelSwitch,
+            msg: [],
+            noteDisplay: false
         };
         return _this;
     }
 
     _createClass(Test, [{
-        key: 'onSubmit',
-        value: function onSubmit(e) {
+        key: 'handleSubmit',
+        value: function handleSubmit(e) {
+            var _this2 = this;
+
             e.preventDefault();
             var formObject = Object.assign({}, this.state.formObject);
-            if (this.props.result != undefined) {
-                this.props.result(formObject);
+            var msg = [];
+            var required = this.handleRequired();
+
+            if (required.length != 0) {
+
+                required.map(function (item, i) {
+                    msg.push(_react2.default.createElement(
+                        'li',
+                        { key: 'note' + i },
+                        item['required']['msg'] || "The form is not filled correctly",
+                        _react2.default.createElement(
+                            'span',
+                            { className: 'note-icon' },
+                            _react2.default.createElement(_fa.FaExclamationTriangle, null)
+                        )
+                    ));
+                });
+
+                this.setState({
+                    msg: msg,
+                    noteDisplay: true
+                }, function () {
+                    clearTimeout(delayTime);
+                    delayTime = setTimeout(function () {
+                        _this2.setState({
+                            noteDisplay: false
+                        });
+                    }, 3000);
+                });
+            } else {
+                if (this.props.result != undefined) {
+                    this.props.result(formObject);
+                }
             }
+        }
+    }, {
+        key: 'handleRequired',
+        value: function handleRequired() {
+            var formObject = Object.assign({}, this.state.formObject);
+            var data = Object.assign([], this.state.data);
+            return data.filter(function (item, i) {
+                var required = item['required']['switch'] || false;
+                if (required) {
+                    var name = item['name'];
+                    if (formObject[name] == "") {
+                        return item;
+                    }
+                }
+            });
         }
     }, {
         key: 'multipleResult',
@@ -17236,14 +17294,13 @@ var Test = function (_React$Component) {
     }, {
         key: 'children',
         value: function children(type, item) {
-            var _this2 = this;
+            var _this3 = this;
 
             if (type == "select") {
 
                 var formObject = this.state.formObject;
                 var data = this.state.data;
                 var name = item['name'];
-                var children = item['children'];
                 var value = formObject[name];
 
                 if (value != "") {
@@ -17252,7 +17309,7 @@ var Test = function (_React$Component) {
                             if (dataItem.hasOwnProperty('children')) {
                                 return dataItem['children'].map(function (childrenItem, c) {
                                     if (childrenItem['key'] == value) {
-                                        return _this2.renderComponent(childrenItem['type'], childrenItem, c);
+                                        return _this3.renderComponent(childrenItem['type'], childrenItem, c);
                                     }
                                 });
                             }
@@ -17264,11 +17321,11 @@ var Test = function (_React$Component) {
     }, {
         key: 'render',
         value: function render() {
-            var _this3 = this;
+            var _this4 = this;
 
             return _react2.default.createElement(
                 'form',
-                { className: 'sun-dev-form-component ', onSubmit: this.onSubmit.bind(this) },
+                { className: 'sun-dev-form-component ', onSubmit: this.handleSubmit.bind(this) },
                 _react2.default.createElement(
                     'ul',
                     { className: 'form-ul' },
@@ -17288,8 +17345,8 @@ var Test = function (_React$Component) {
                                     _react2.default.createElement(
                                         'li',
                                         null,
-                                        _this3.renderComponent(item['type'], item, i),
-                                        _this3.children(item['type'], item)
+                                        _this4.renderComponent(item['type'], item, i),
+                                        _this4.children(item['type'], item)
                                     )
                                 )
                             );
@@ -17297,8 +17354,8 @@ var Test = function (_React$Component) {
                             return _react2.default.createElement(
                                 'li',
                                 { key: i },
-                                _this3.renderComponent(item['type'], item, i),
-                                _this3.children(item['type'], item)
+                                _this4.renderComponent(item['type'], item, i),
+                                _this4.children(item['type'], item)
                             );
                         }
                     }),
@@ -17316,7 +17373,8 @@ var Test = function (_React$Component) {
                             'Submit'
                         )
                     )
-                )
+                ),
+                _react2.default.createElement(_note2.default, { noteDisplay: this.state.noteDisplay, msg: this.state.msg })
             );
         }
     }]);
@@ -17410,18 +17468,22 @@ var Index = function (_React$Component) {
             var value = this.state[name];
             var pass = this.state.pass;
 
-            switch (type) {
-                case 'number':
-                    pass = numberCheck(value);
-                    break;
+            if (this.state.doubleCheck) {
+                pass = this.doubleCheck();
+            } else {
+                switch (type) {
+                    case 'number':
+                        pass = numberCheck(value);
+                        break;
 
-                case 'password':
-                    pass = this.doubleCheck();
-                    break;
+                    case 'mail':
+                        pass = mailCheck(value);
+                        break;
 
-                case 'mail':
-                    pass = mailCheck(value);
-                    break;
+                    default:
+                        pass = true;
+                        break;
+                }
             }
 
             this.setState({
@@ -17516,7 +17578,7 @@ var _item = __webpack_require__(50);
 
 var _item2 = _interopRequireDefault(_item);
 
-__webpack_require__(78);
+__webpack_require__(80);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17842,7 +17904,86 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
-__webpack_require__(79);
+__webpack_require__(81);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Index = function (_React$Component) {
+    _inherits(Index, _React$Component);
+
+    function Index(props) {
+        _classCallCheck(this, Index);
+
+        var _this = _possibleConstructorReturn(this, (Index.__proto__ || Object.getPrototypeOf(Index)).call(this, props));
+
+        _this.state = {
+            msg: props.msg || [],
+            noteDisplay: props.noteDisplay || false
+        };
+        return _this;
+    }
+
+    _createClass(Index, [{
+        key: 'componentWillReceiveProps',
+        value: function componentWillReceiveProps(nextProps) {
+            this.setState({
+                msg: nextProps.msg || [],
+                noteDisplay: nextProps.noteDisplay || false
+            });
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            if (this.state.noteDisplay) {
+                return _react2.default.createElement(
+                    'div',
+                    { className: 'form-note' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'form-note-wrap' },
+                        _react2.default.createElement(
+                            'ul',
+                            null,
+                            this.state.msg
+                        )
+                    )
+                );
+            } else {
+                return null;
+            }
+        }
+    }]);
+
+    return Index;
+}(_react2.default.Component);
+
+exports.default = Index;
+
+/***/ }),
+/* 52 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = undefined;
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(0);
+
+var _react2 = _interopRequireDefault(_react);
+
+__webpack_require__(82);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -17928,7 +18069,7 @@ var Index = function (_React$Component) {
 exports.default = Index;
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -17947,7 +18088,7 @@ var _react2 = _interopRequireDefault(_react);
 
 var _fa = __webpack_require__(3);
 
-__webpack_require__(80);
+__webpack_require__(83);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -18032,7 +18173,7 @@ var Index = function (_React$Component) {
 exports.default = Index;
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18109,7 +18250,7 @@ var Index = function (_React$Component) {
 exports.default = Index;
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18245,7 +18386,7 @@ var Router = function (_React$Component) {
 exports.default = Router;
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -18259,7 +18400,7 @@ exports.push([module.i, ".datetime-time {\n  width: 100%;\n  max-width: 320px;\n
 
 
 /***/ }),
-/* 56 */
+/* 57 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)(false);
@@ -18273,20 +18414,6 @@ exports.push([module.i, ".multiple-wrap {\n  width: 100%;\n  position: relative;
 
 
 /***/ }),
-/* 57 */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(2)(false);
-// imports
-
-
-// module
-exports.push([module.i, ".radio-wrap {\n  width: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap; }\n  .radio-wrap .input-radio {\n    height: 44px;\n    padding: 0px 10px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .radio-wrap .input-radio .checkmark {\n      width: 21px;\n      height: 21px;\n      display: -webkit-inline-flex;\n      display: -ms-inline-flexbox;\n      display: inline-flex;\n      background: #ccc;\n      margin-right: 10px;\n      border-radius: 100px;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-justify-content: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4); }\n      .radio-wrap .input-radio .checkmark:after {\n        content: \"\";\n        width: 9px;\n        height: 9px;\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        background: #fff;\n        border-radius: 100px;\n        opacity: 0; }\n  .radio-wrap [type=radio] {\n    width: 21px;\n    height: 21px;\n    margin-right: -23px;\n    position: relative;\n    z-index: 2;\n    opacity: 0;\n    cursor: pointer; }\n    .radio-wrap [type=radio]:checked ~ .checkmark {\n      background: #727cf5; }\n      .radio-wrap [type=radio]:checked ~ .checkmark:after {\n        opacity: 1; }\n", ""]);
-
-// exports
-
-
-/***/ }),
 /* 58 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18295,7 +18422,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, ".input-box.select {\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  position: relative; }\n\n.input-box .select-icon {\n  width: 30px;\n  height: 30px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  position: absolute;\n  z-index: 1;\n  right: 10px;\n  color: #999;\n  font-size: 1.1em; }\n\n.input-box select {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  width: 100%;\n  height: 44px;\n  padding-right: 50px;\n  padding-left: 5px;\n  border: none;\n  position: relative;\n  z-index: 2;\n  background: transparent;\n  outline: none;\n  font-size: 1em;\n  cursor: pointer; }\n  .input-box select option {\n    height: 30px;\n    background: #fff; }\n", ""]);
+exports.push([module.i, ".form-note {\n  width: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  position: fixed;\n  top: 0px;\n  left: 0px;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center; }\n  .form-note ul {\n    width: 100%;\n    list-style-type: none;\n    font-size: 0.8em; }\n    .form-note ul > li {\n      width: 100%;\n      min-height: 35px;\n      padding: 5px 0px;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-justify-content: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      font-weight: bold; }\n      .form-note ul > li .note-icon {\n        margin-left: 10px;\n        display: -webkit-inline-flex;\n        display: -ms-inline-flexbox;\n        display: inline-flex;\n        font-size: 1.4em;\n        color: #ff9900; }\n  .form-note .form-note-wrap {\n    min-width: 260px;\n    max-width: 400px;\n    padding: 5px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    background: #fff;\n    margin: 20px 0px 0px 0px;\n    border-radius: 4px;\n    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); }\n", ""]);
 
 // exports
 
@@ -18309,7 +18436,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "form.sun-dev-form-component {\n  width: 100%;\n  max-width: 600px; }\n\nform .form-ul {\n  width: 100%;\n  padding: 5px; }\n  form .form-ul > li {\n    width: 100%;\n    padding: 5px 0px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    form .form-ul > li > ul {\n      width: 100%;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n      form .form-ul > li > ul > li {\n        display: -webkit-inline-flex;\n        display: -ms-inline-flexbox;\n        display: inline-flex; }\n        form .form-ul > li > ul > li:first-child {\n          -webkit-flex: 1;\n              -ms-flex: 1;\n                  flex: 1;\n          font-size: 0.9em;\n          -webkit-align-items: center;\n              -ms-flex-align: center;\n                  align-items: center;\n          min-width: 100px;\n          -webkit-justify-content: flex-end;\n              -ms-flex-pack: end;\n                  justify-content: flex-end; }\n          form .form-ul > li > ul > li:first-child:after {\n            content: \":\";\n            padding: 0px 10px; }\n        form .form-ul > li > ul > li:last-child {\n          -webkit-flex: 3;\n              -ms-flex: 3;\n                  flex: 3; }\n\nform input, form button, form textarea {\n  width: 100%;\n  outline: none;\n  border: none;\n  padding: 5px;\n  background: transparent; }\n  form input::-webkit-input-placeholder, form button::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {\n    color: #ccc; }\n  form input::-moz-placeholder, form button::-moz-placeholder, form textarea::-moz-placeholder {\n    color: #ccc; }\n  form input:-ms-input-placeholder, form button:-ms-input-placeholder, form textarea:-ms-input-placeholder {\n    color: #ccc; }\n  form input::placeholder, form button::placeholder, form textarea::placeholder {\n    color: #ccc; }\n\nform input {\n  height: 44px;\n  font-size: 0.9em;\n  letter-spacing: 0.1em; }\n  form input.error {\n    background: #ffe4e4; }\n\nform button, form .formBtn {\n  width: 100%;\n  height: 40px;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  font-size: 0.9em;\n  background: #ccc;\n  margin-left: 10px;\n  cursor: pointer;\n  border-radius: 4px;\n  opacity: 0.8;\n  transition: opacity .3s; }\n  form button:hover, form .formBtn:hover {\n    opacity: 1; }\n  form button:first-child, form .formBtn:first-child {\n    margin-left: 0px; }\n  form button:last-child, form .formBtn:last-child {\n    margin-left: 10px; }\n  form button.cancel, form .formBtn.cancel {\n    background: #6c757d;\n    color: #fff; }\n  form button[type=submit], form .formBtn[type=submit] {\n    background: #727cf5;\n    color: #fff; }\n\nform textarea {\n  font-size: 0.9em;\n  min-height: 150px;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none; }\n\nform .input-box {\n  width: 100%;\n  height: 100%;\n  min-height: 44px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  background: #fff;\n  position: relative;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  form .input-box.false {\n    background: #ffe4e4; }\n  form .input-box .input-box-msg {\n    padding: 5px;\n    position: absolute;\n    right: 10px;\n    display: block;\n    font-size: 0.6em;\n    background: #ffb258;\n    color: #fff;\n    border-radius: 4px;\n    font-weight: 600; }\n", ""]);
+exports.push([module.i, ".radio-wrap {\n  width: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap; }\n  .radio-wrap .input-radio {\n    height: 44px;\n    padding: 0px 10px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    .radio-wrap .input-radio .checkmark {\n      width: 21px;\n      height: 21px;\n      display: -webkit-inline-flex;\n      display: -ms-inline-flexbox;\n      display: inline-flex;\n      background: #ccc;\n      margin-right: 10px;\n      border-radius: 100px;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-justify-content: center;\n          -ms-flex-pack: center;\n              justify-content: center;\n      box-shadow: inset 0px 0px 3px rgba(0, 0, 0, 0.4); }\n      .radio-wrap .input-radio .checkmark:after {\n        content: \"\";\n        width: 9px;\n        height: 9px;\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        background: #fff;\n        border-radius: 100px;\n        opacity: 0; }\n  .radio-wrap [type=radio] {\n    width: 21px;\n    height: 21px;\n    margin-right: -23px;\n    position: relative;\n    z-index: 2;\n    opacity: 0;\n    cursor: pointer; }\n    .radio-wrap [type=radio]:checked ~ .checkmark {\n      background: #727cf5; }\n      .radio-wrap [type=radio]:checked ~ .checkmark:after {\n        opacity: 1; }\n", ""]);
 
 // exports
 
@@ -18323,13 +18450,41 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "* {\n  -webkit-text-size-adjust: none;\n  -ms-text-size-adjust: none;\n  text-size-adjust: none;\n  box-sizing: border-box;\n  -moz-user-select: auto;\n  -webkit-user-select: auto;\n  margin: 0px;\n  padding: 0px; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  height: 100%;\n  font-size: 100%;\n  background: #EEE;\n  font-family: 'Noto Sans TC', sans-serif; }\n\n#root {\n  height: 100%; }\n\n.ifram-block {\n  width: 100%;\n  height: 100%;\n  padding: 10px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  position: relative;\n  -webkit-flex-direction: column;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .ifram-block.limitHeight {\n    height: 100%;\n    overflow: auto; }\n\n.ifram-tool {\n  width: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-flex: 0.7;\n      -ms-flex: 0.7;\n          flex: 0.7; }\n  .ifram-tool > ul {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex; }\n    .ifram-tool > ul > li {\n      display: -webkit-inline-flex;\n      display: -ms-inline-flexbox;\n      display: inline-flex;\n      position: relative;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-justify-content: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n      .ifram-tool > ul > li .text {\n        position: absolute;\n        font-size: 1.6em;\n        font-weight: 500;\n        bottom: 25%; }\n        .ifram-tool > ul > li .text.color1 {\n          color: #e03535; }\n        .ifram-tool > ul > li .text.color2 {\n          color: #38c94b; }\n      .ifram-tool > ul > li a {\n        color: #fff;\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        position: relative;\n        -webkit-justify-content: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n        margin-right: 5px;\n        font-size: 1.2em; }\n        .ifram-tool > ul > li a span.nav_text {\n          position: absolute; }\n        .ifram-tool > ul > li a > img.no_current {\n          display: block; }\n        .ifram-tool > ul > li a > img.current {\n          display: none; }\n        .ifram-tool > ul > li a.active > img.no_current {\n          display: none; }\n        .ifram-tool > ul > li a.active > img.current {\n          display: block; }\n  .ifram-tool .change_block {\n    position: relative;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex; }\n    .ifram-tool .change_block .text {\n      color: #fff;\n      font-size: 1.2em;\n      margin-top: 7px;\n      position: absolute;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n    .ifram-tool .change_block span, .ifram-tool .change_block a {\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      position: absolute; }\n      .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n        margin-top: 2%; }\n        .ifram-tool .change_block span.btn.change_block_left, .ifram-tool .change_block a.btn.change_block_left {\n          left: 0.5%; }\n        .ifram-tool .change_block span.btn.change_block_right, .ifram-tool .change_block a.btn.change_block_right {\n          right: 0.5%;\n          -webkit-transform: scaleX(-1);\n          -ms-transform: scaleX(-1);\n              transform: scaleX(-1); }\n  @media all and (min-width: 800px) {\n    .ifram-tool .move-left {\n      margin-left: -10px; }\n    .ifram-tool > ul > li .text {\n      font-size: 1.5em; }\n    .ifram-tool > ul > li img {\n      width: 210px; }\n    .ifram-tool > ul > li a {\n      font-size: 1.3em; }\n      .ifram-tool > ul > li a img {\n        width: 150px; }\n    .ifram-tool .change_block .text {\n      font-size: 1.3em; }\n    .ifram-tool .change_block > img {\n      width: 200px; }\n    .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      .ifram-tool .change_block span.btn img, .ifram-tool .change_block a.btn img {\n        width: 53px; } }\n  @media all and (min-width: 600px) and (max-width: 799px) {\n    .ifram-tool .move-left {\n      margin-left: -10px; }\n    .ifram-tool > ul > li .text {\n      font-size: 0.8em; }\n    .ifram-tool > ul > li img {\n      width: 115px; }\n    .ifram-tool > ul > li a {\n      font-size: 1em; }\n      .ifram-tool > ul > li a img {\n        width: 110px; }\n    .ifram-tool .change_block .text {\n      font-size: 1em; }\n    .ifram-tool .change_block > img {\n      width: 130px; }\n    .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      .ifram-tool .change_block span.btn img, .ifram-tool .change_block a.btn img {\n        width: 35px; } }\n  @media all and (max-width: 599px) {\n    .ifram-tool.move-left {\n      margin-left: -5px;\n      margin-right: -5px; }\n    .ifram-tool > ul > li .text {\n      font-size: 0.8em; }\n    .ifram-tool > ul > li img {\n      width: 110px; }\n    .ifram-tool > ul > li a {\n      font-size: 0.8em; }\n      .ifram-tool > ul > li a img {\n        width: 90px; }\n    .ifram-tool .change_block .text {\n      font-size: 0.8em; }\n    .ifram-tool .change_block > img {\n      width: 120px; }\n    .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      .ifram-tool .change_block span.btn img, .ifram-tool .change_block a.btn img {\n        width: 32px; } }\n\n.ifram-content {\n  width: 100%;\n  height: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n  .ifram-content .ifram-content-in {\n    width: 100%; }\n  .ifram-content .total-block {\n    width: 100%;\n    margin-bottom: 5px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    background: #ececec;\n    -webkit-justify-content: flex-end;\n        -ms-flex-pack: end;\n            justify-content: flex-end; }\n    .ifram-content .total-block > ul {\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n      .ifram-content .total-block > ul > li {\n        display: -webkit-inline-flex;\n        display: -ms-inline-flexbox;\n        display: inline-flex;\n        -webkit-justify-content: flex-end;\n            -ms-flex-pack: end;\n                justify-content: flex-end; }\n        .ifram-content .total-block > ul > li.label {\n          -webkit-justify-content: space-between;\n              -ms-flex-pack: justify;\n                  justify-content: space-between; }\n  @media all and (min-width: 800px) {\n    .ifram-content {\n      padding: 10px;\n      -webkit-flex: 3;\n          -ms-flex: 3;\n              flex: 3; }\n      .ifram-content .total-block {\n        height: 45px; }\n        .ifram-content .total-block > ul {\n          font-size: 1em; }\n          .ifram-content .total-block > ul > li {\n            padding: 0px 10px;\n            min-width: 100px; } }\n  @media all and (min-width: 600px) and (max-width: 799px) {\n    .ifram-content {\n      padding: 0px;\n      -webkit-flex: 3;\n          -ms-flex: 3;\n              flex: 3; }\n      .ifram-content .total-block {\n        height: 40px; }\n        .ifram-content .total-block > ul {\n          font-size: 0.9em; }\n          .ifram-content .total-block > ul > li {\n            padding: 0px 10px;\n            min-width: 100px; } }\n  @media all and (max-width: 599px) {\n    .ifram-content {\n      padding: 0px;\n      -webkit-flex: 3;\n          -ms-flex: 3;\n              flex: 3; }\n      .ifram-content .total-block {\n        height: 35px; }\n        .ifram-content .total-block > ul {\n          font-size: 0.8em; }\n          .ifram-content .total-block > ul > li {\n            padding: 0px 5px;\n            min-width: 70px; } }\n\ncanvas {\n  background: #fff; }\n\nul.total {\n  height: 35px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background-color: #fff;\n  position: absolute;\n  left: 0px;\n  bottom: 7px;\n  font-size: 0.8em; }\n  ul.total > li {\n    padding: 0px 10px;\n    display: -webkit-inline-flex;\n    display: -ms-inline-flexbox;\n    display: inline-flex; }\n\n.wrap-popup {\n  height: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -webkit-align-content: center;\n      -ms-flex-line-pack: center;\n          align-content: center; }\n  .wrap-popup .wrap-popup-block {\n    width: 100%;\n    padding: 10px 0px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n    .wrap-popup .wrap-popup-block:first-child {\n      padding-top: 0px; }\n    .wrap-popup .wrap-popup-block:last-child {\n      padding-bottom: 0px; }\n    .wrap-popup .wrap-popup-block .title {\n      width: 100px;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      margin-bottom: 10px;\n      font-size: 1.2em;\n      text-align: center;\n      -webkit-justify-content: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n    .wrap-popup .wrap-popup-block .wrap-popup-block-content {\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n      .wrap-popup .wrap-popup-block .wrap-popup-block-content .popup-component {\n        display: -webkit-inline-flex;\n        display: -ms-inline-flexbox;\n        display: inline-flex; }\n        .wrap-popup .wrap-popup-block .wrap-popup-block-content .popup-component > button {\n          width: 400px;\n          height: 40px;\n          padding: 0px 10px;\n          margin-right: 10px;\n          border-radius: 4px;\n          cursor: pointer; }\n        .wrap-popup .wrap-popup-block .wrap-popup-block-content .popup-component:last-child > button {\n          margin-right: 0px; }\n", ""]);
+exports.push([module.i, ".input-box.select {\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  position: relative; }\n\n.input-box .select-icon {\n  width: 30px;\n  height: 30px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  position: absolute;\n  z-index: 1;\n  right: 10px;\n  color: #999;\n  font-size: 1.1em; }\n\n.input-box select {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none;\n  width: 100%;\n  height: 44px;\n  padding-right: 50px;\n  padding-left: 5px;\n  border: none;\n  position: relative;\n  z-index: 2;\n  background: transparent;\n  outline: none;\n  font-size: 1em;\n  cursor: pointer; }\n  .input-box select option {\n    height: 30px;\n    background: #fff; }\n", ""]);
 
 // exports
 
 
 /***/ }),
 /* 61 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "form.sun-dev-form-component {\n  width: 100%;\n  max-width: 600px; }\n\nform .form-ul {\n  width: 100%;\n  padding: 5px; }\n  form .form-ul > li {\n    width: 100%;\n    padding: 5px 0px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center; }\n    form .form-ul > li > ul {\n      width: 100%;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n      form .form-ul > li > ul > li {\n        display: -webkit-inline-flex;\n        display: -ms-inline-flexbox;\n        display: inline-flex; }\n        form .form-ul > li > ul > li:first-child {\n          -webkit-flex: 1;\n              -ms-flex: 1;\n                  flex: 1;\n          font-size: 0.9em;\n          -webkit-align-items: center;\n              -ms-flex-align: center;\n                  align-items: center;\n          min-width: 100px;\n          -webkit-justify-content: flex-end;\n              -ms-flex-pack: end;\n                  justify-content: flex-end; }\n          form .form-ul > li > ul > li:first-child:after {\n            content: \":\";\n            padding: 0px 10px; }\n        form .form-ul > li > ul > li:last-child {\n          -webkit-flex: 3;\n              -ms-flex: 3;\n                  flex: 3; }\n\nform input, form button, form textarea {\n  width: 100%;\n  outline: none;\n  border: none;\n  padding: 5px;\n  background: transparent; }\n  form input::-webkit-input-placeholder, form button::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {\n    color: #ccc; }\n  form input::-moz-placeholder, form button::-moz-placeholder, form textarea::-moz-placeholder {\n    color: #ccc; }\n  form input:-ms-input-placeholder, form button:-ms-input-placeholder, form textarea:-ms-input-placeholder {\n    color: #ccc; }\n  form input::placeholder, form button::placeholder, form textarea::placeholder {\n    color: #ccc; }\n\nform input {\n  height: 44px;\n  font-size: 0.9em;\n  letter-spacing: 0.1em; }\n  form input.error {\n    background: #ffe4e4; }\n\nform button, form .formBtn {\n  width: 100%;\n  height: 40px;\n  display: -webkit-inline-flex;\n  display: -ms-inline-flexbox;\n  display: inline-flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-justify-content: center;\n      -ms-flex-pack: center;\n          justify-content: center;\n  font-size: 0.9em;\n  background: #ccc;\n  margin-left: 10px;\n  cursor: pointer;\n  border-radius: 4px;\n  opacity: 0.8;\n  transition: opacity .3s; }\n  form button:hover, form .formBtn:hover {\n    opacity: 1; }\n  form button:first-child, form .formBtn:first-child {\n    margin-left: 0px; }\n  form button:last-child, form .formBtn:last-child {\n    margin-left: 10px; }\n  form button.cancel, form .formBtn.cancel {\n    background: #6c757d;\n    color: #fff; }\n  form button[type=submit], form .formBtn[type=submit] {\n    background: #727cf5;\n    color: #fff; }\n\nform textarea {\n  font-size: 0.9em;\n  min-height: 150px;\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none; }\n\nform .input-box {\n  width: 100%;\n  height: 100%;\n  min-height: 44px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  background: #fff;\n  position: relative;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center; }\n  form .input-box.false {\n    background: #ffe4e4; }\n  form .input-box .input-box-msg {\n    padding: 5px;\n    position: absolute;\n    right: 10px;\n    display: block;\n    font-size: 0.6em;\n    background: #ffb258;\n    color: #fff;\n    border-radius: 4px;\n    font-weight: 600; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 62 */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(2)(false);
+// imports
+
+
+// module
+exports.push([module.i, "* {\n  -webkit-text-size-adjust: none;\n  -ms-text-size-adjust: none;\n  text-size-adjust: none;\n  box-sizing: border-box;\n  -moz-user-select: auto;\n  -webkit-user-select: auto;\n  margin: 0px;\n  padding: 0px; }\n\nhtml {\n  height: 100%; }\n\nbody {\n  height: 100%;\n  font-size: 100%;\n  background: #EEE;\n  font-family: 'Noto Sans TC', sans-serif; }\n\n#root {\n  height: 100%; }\n\n.ifram-block {\n  width: 100%;\n  height: 100%;\n  padding: 10px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  position: relative;\n  -webkit-flex-direction: column;\n      -ms-flex-direction: column;\n          flex-direction: column; }\n  .ifram-block.limitHeight {\n    height: 100%;\n    overflow: auto; }\n\n.ifram-tool {\n  width: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-justify-content: space-between;\n      -ms-flex-pack: justify;\n          justify-content: space-between;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  -webkit-flex: 0.7;\n      -ms-flex: 0.7;\n          flex: 0.7; }\n  .ifram-tool > ul {\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex; }\n    .ifram-tool > ul > li {\n      display: -webkit-inline-flex;\n      display: -ms-inline-flexbox;\n      display: inline-flex;\n      position: relative;\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center;\n      -webkit-justify-content: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n      .ifram-tool > ul > li .text {\n        position: absolute;\n        font-size: 1.6em;\n        font-weight: 500;\n        bottom: 25%; }\n        .ifram-tool > ul > li .text.color1 {\n          color: #e03535; }\n        .ifram-tool > ul > li .text.color2 {\n          color: #38c94b; }\n      .ifram-tool > ul > li a {\n        color: #fff;\n        display: -webkit-flex;\n        display: -ms-flexbox;\n        display: flex;\n        -webkit-align-items: center;\n            -ms-flex-align: center;\n                align-items: center;\n        position: relative;\n        -webkit-justify-content: center;\n            -ms-flex-pack: center;\n                justify-content: center;\n        margin-right: 5px;\n        font-size: 1.2em; }\n        .ifram-tool > ul > li a span.nav_text {\n          position: absolute; }\n        .ifram-tool > ul > li a > img.no_current {\n          display: block; }\n        .ifram-tool > ul > li a > img.current {\n          display: none; }\n        .ifram-tool > ul > li a.active > img.no_current {\n          display: none; }\n        .ifram-tool > ul > li a.active > img.current {\n          display: block; }\n  .ifram-tool .change_block {\n    position: relative;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex; }\n    .ifram-tool .change_block .text {\n      color: #fff;\n      font-size: 1.2em;\n      margin-top: 7px;\n      position: absolute;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n    .ifram-tool .change_block span, .ifram-tool .change_block a {\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      position: absolute; }\n      .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n        margin-top: 2%; }\n        .ifram-tool .change_block span.btn.change_block_left, .ifram-tool .change_block a.btn.change_block_left {\n          left: 0.5%; }\n        .ifram-tool .change_block span.btn.change_block_right, .ifram-tool .change_block a.btn.change_block_right {\n          right: 0.5%;\n          -webkit-transform: scaleX(-1);\n          -ms-transform: scaleX(-1);\n              transform: scaleX(-1); }\n  @media all and (min-width: 800px) {\n    .ifram-tool .move-left {\n      margin-left: -10px; }\n    .ifram-tool > ul > li .text {\n      font-size: 1.5em; }\n    .ifram-tool > ul > li img {\n      width: 210px; }\n    .ifram-tool > ul > li a {\n      font-size: 1.3em; }\n      .ifram-tool > ul > li a img {\n        width: 150px; }\n    .ifram-tool .change_block .text {\n      font-size: 1.3em; }\n    .ifram-tool .change_block > img {\n      width: 200px; }\n    .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      .ifram-tool .change_block span.btn img, .ifram-tool .change_block a.btn img {\n        width: 53px; } }\n  @media all and (min-width: 600px) and (max-width: 799px) {\n    .ifram-tool .move-left {\n      margin-left: -10px; }\n    .ifram-tool > ul > li .text {\n      font-size: 0.8em; }\n    .ifram-tool > ul > li img {\n      width: 115px; }\n    .ifram-tool > ul > li a {\n      font-size: 1em; }\n      .ifram-tool > ul > li a img {\n        width: 110px; }\n    .ifram-tool .change_block .text {\n      font-size: 1em; }\n    .ifram-tool .change_block > img {\n      width: 130px; }\n    .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      .ifram-tool .change_block span.btn img, .ifram-tool .change_block a.btn img {\n        width: 35px; } }\n  @media all and (max-width: 599px) {\n    .ifram-tool.move-left {\n      margin-left: -5px;\n      margin-right: -5px; }\n    .ifram-tool > ul > li .text {\n      font-size: 0.8em; }\n    .ifram-tool > ul > li img {\n      width: 110px; }\n    .ifram-tool > ul > li a {\n      font-size: 0.8em; }\n      .ifram-tool > ul > li a img {\n        width: 90px; }\n    .ifram-tool .change_block .text {\n      font-size: 0.8em; }\n    .ifram-tool .change_block > img {\n      width: 120px; }\n    .ifram-tool .change_block span.btn, .ifram-tool .change_block a.btn {\n      -webkit-align-items: center;\n          -ms-flex-align: center;\n              align-items: center; }\n      .ifram-tool .change_block span.btn img, .ifram-tool .change_block a.btn img {\n        width: 32px; } }\n\n.ifram-content {\n  width: 100%;\n  height: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex; }\n  .ifram-content .ifram-content-in {\n    width: 100%; }\n  .ifram-content .total-block {\n    width: 100%;\n    margin-bottom: 5px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    background: #ececec;\n    -webkit-justify-content: flex-end;\n        -ms-flex-pack: end;\n            justify-content: flex-end; }\n    .ifram-content .total-block > ul {\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n      .ifram-content .total-block > ul > li {\n        display: -webkit-inline-flex;\n        display: -ms-inline-flexbox;\n        display: inline-flex;\n        -webkit-justify-content: flex-end;\n            -ms-flex-pack: end;\n                justify-content: flex-end; }\n        .ifram-content .total-block > ul > li.label {\n          -webkit-justify-content: space-between;\n              -ms-flex-pack: justify;\n                  justify-content: space-between; }\n  @media all and (min-width: 800px) {\n    .ifram-content {\n      padding: 10px;\n      -webkit-flex: 3;\n          -ms-flex: 3;\n              flex: 3; }\n      .ifram-content .total-block {\n        height: 45px; }\n        .ifram-content .total-block > ul {\n          font-size: 1em; }\n          .ifram-content .total-block > ul > li {\n            padding: 0px 10px;\n            min-width: 100px; } }\n  @media all and (min-width: 600px) and (max-width: 799px) {\n    .ifram-content {\n      padding: 0px;\n      -webkit-flex: 3;\n          -ms-flex: 3;\n              flex: 3; }\n      .ifram-content .total-block {\n        height: 40px; }\n        .ifram-content .total-block > ul {\n          font-size: 0.9em; }\n          .ifram-content .total-block > ul > li {\n            padding: 0px 10px;\n            min-width: 100px; } }\n  @media all and (max-width: 599px) {\n    .ifram-content {\n      padding: 0px;\n      -webkit-flex: 3;\n          -ms-flex: 3;\n              flex: 3; }\n      .ifram-content .total-block {\n        height: 35px; }\n        .ifram-content .total-block > ul {\n          font-size: 0.8em; }\n          .ifram-content .total-block > ul > li {\n            padding: 0px 5px;\n            min-width: 70px; } }\n\ncanvas {\n  background: #fff; }\n\nul.total {\n  height: 35px;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-align-items: center;\n      -ms-flex-align: center;\n          align-items: center;\n  background-color: #fff;\n  position: absolute;\n  left: 0px;\n  bottom: 7px;\n  font-size: 0.8em; }\n  ul.total > li {\n    padding: 0px 10px;\n    display: -webkit-inline-flex;\n    display: -ms-inline-flexbox;\n    display: inline-flex; }\n\n.wrap-popup {\n  height: 100%;\n  display: -webkit-flex;\n  display: -ms-flexbox;\n  display: flex;\n  -webkit-flex-wrap: wrap;\n      -ms-flex-wrap: wrap;\n          flex-wrap: wrap;\n  -webkit-align-content: center;\n      -ms-flex-line-pack: center;\n          align-content: center; }\n  .wrap-popup .wrap-popup-block {\n    width: 100%;\n    padding: 10px 0px;\n    display: -webkit-flex;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-flex-wrap: wrap;\n        -ms-flex-wrap: wrap;\n            flex-wrap: wrap;\n    -webkit-align-items: center;\n        -ms-flex-align: center;\n            align-items: center;\n    -webkit-justify-content: center;\n        -ms-flex-pack: center;\n            justify-content: center;\n    -webkit-flex-direction: column;\n        -ms-flex-direction: column;\n            flex-direction: column; }\n    .wrap-popup .wrap-popup-block:first-child {\n      padding-top: 0px; }\n    .wrap-popup .wrap-popup-block:last-child {\n      padding-bottom: 0px; }\n    .wrap-popup .wrap-popup-block .title {\n      width: 100px;\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex;\n      margin-bottom: 10px;\n      font-size: 1.2em;\n      text-align: center;\n      -webkit-justify-content: center;\n          -ms-flex-pack: center;\n              justify-content: center; }\n    .wrap-popup .wrap-popup-block .wrap-popup-block-content {\n      display: -webkit-flex;\n      display: -ms-flexbox;\n      display: flex; }\n      .wrap-popup .wrap-popup-block .wrap-popup-block-content .popup-component {\n        display: -webkit-inline-flex;\n        display: -ms-inline-flexbox;\n        display: inline-flex; }\n        .wrap-popup .wrap-popup-block .wrap-popup-block-content .popup-component > button {\n          width: 400px;\n          height: 40px;\n          padding: 0px 10px;\n          margin-right: 10px;\n          border-radius: 4px;\n          cursor: pointer; }\n        .wrap-popup .wrap-popup-block .wrap-popup-block-content .popup-component:last-child > button {\n          margin-right: 0px; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+/* 63 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18364,7 +18519,7 @@ function camelize(string) {
 module.exports = camelize;
 
 /***/ }),
-/* 62 */
+/* 64 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18379,7 +18534,7 @@ module.exports = camelize;
 
 
 
-var camelize = __webpack_require__(61);
+var camelize = __webpack_require__(63);
 
 var msPattern = /^-ms-/;
 
@@ -18407,7 +18562,7 @@ function camelizeStyleName(string) {
 module.exports = camelizeStyleName;
 
 /***/ }),
-/* 63 */
+/* 65 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18443,7 +18598,7 @@ function hyphenate(string) {
 module.exports = hyphenate;
 
 /***/ }),
-/* 64 */
+/* 66 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18458,7 +18613,7 @@ module.exports = hyphenate;
 
 
 
-var hyphenate = __webpack_require__(63);
+var hyphenate = __webpack_require__(65);
 
 var msPattern = /^ms-/;
 
@@ -18485,7 +18640,7 @@ function hyphenateStyleName(string) {
 module.exports = hyphenateStyleName;
 
 /***/ }),
-/* 65 */
+/* 67 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18513,7 +18668,7 @@ function isNode(object) {
 module.exports = isNode;
 
 /***/ }),
-/* 66 */
+/* 68 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18528,7 +18683,7 @@ module.exports = isNode;
  * @typechecks
  */
 
-var isNode = __webpack_require__(65);
+var isNode = __webpack_require__(67);
 
 /**
  * @param {*} object The object to check.
@@ -18541,7 +18696,7 @@ function isTextNode(object) {
 module.exports = isTextNode;
 
 /***/ }),
-/* 67 */
+/* 69 */
 /***/ (function(module, exports) {
 
 /*!
@@ -18568,7 +18723,7 @@ function isSlowBuffer (obj) {
 
 
 /***/ }),
-/* 68 */
+/* 70 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -18758,7 +18913,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 69 */
+/* 71 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18777,7 +18932,7 @@ module.exports = ReactPropTypesSecret;
 
 
 /***/ }),
-/* 70 */
+/* 72 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -18809,8 +18964,8 @@ var getActiveElement = __webpack_require__(18);
 var shallowEqual = __webpack_require__(19);
 var containsNode = __webpack_require__(17);
 var emptyObject = __webpack_require__(7);
-var hyphenateStyleName = __webpack_require__(64);
-var camelizeStyleName = __webpack_require__(62);
+var hyphenateStyleName = __webpack_require__(66);
+var camelizeStyleName = __webpack_require__(64);
 
 // Relying on the `invariant()` implementation lets us
 // have preserve the format and params in the www builds.
@@ -36215,7 +36370,7 @@ module.exports = reactDom;
 
 
 /***/ }),
-/* 71 */
+/* 73 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36462,7 +36617,7 @@ var Bi={default:wi},Ci=Bi&&wi||Bi;module.exports=Ci.default?Ci.default:Ci;
 
 
 /***/ }),
-/* 72 */
+/* 74 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36500,14 +36655,14 @@ if (__webpack_require__.i({"NODE_ENV_REDUX_BUILD":true,"NODE_ENV_CLOSE_LOG":fals
   // DCE check should happen before ReactDOM bundle executes so that
   // DevTools can report bad minification during injection.
   checkDCE();
-  module.exports = __webpack_require__(71);
+  module.exports = __webpack_require__(73);
 } else {
-  module.exports = __webpack_require__(70);
+  module.exports = __webpack_require__(72);
 }
 
 
 /***/ }),
-/* 73 */
+/* 75 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36522,7 +36677,7 @@ var __assign = (this && this.__assign) || Object.assign || function(t) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var React = __webpack_require__(0);
-var iconContext_1 = __webpack_require__(74);
+var iconContext_1 = __webpack_require__(76);
 function Tree2Element(tree) {
     return tree && tree.map(function (node, i) { return React.createElement(node.tag, __assign({ key: i }, node.attr), Tree2Element(node.child)); });
 }
@@ -36548,7 +36703,7 @@ exports.IconBase = IconBase;
 
 
 /***/ }),
-/* 74 */
+/* 76 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -36566,7 +36721,7 @@ exports.IconContext = React.createContext && React.createContext(exports.Default
 
 
 /***/ }),
-/* 75 */
+/* 77 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38059,7 +38214,7 @@ module.exports = react;
 
 
 /***/ }),
-/* 76 */
+/* 78 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -38088,13 +38243,13 @@ assign:k}},Y={default:X},Z=Y&&X||Y;module.exports=Z.default?Z.default:Z;
 
 
 /***/ }),
-/* 77 */
+/* 79 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(55);
+var content = __webpack_require__(56);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38119,13 +38274,13 @@ if(false) {
 }
 
 /***/ }),
-/* 78 */
+/* 80 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(56);
+var content = __webpack_require__(57);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38150,13 +38305,44 @@ if(false) {
 }
 
 /***/ }),
-/* 79 */
+/* 81 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(57);
+var content = __webpack_require__(58);
+if(typeof content === 'string') content = [[module.i, content, '']];
+// Prepare cssTransformation
+var transform;
+
+var options = {}
+options.transform = transform
+// add the styles to the DOM
+var update = __webpack_require__(4)(content, options);
+if(content.locals) module.exports = content.locals;
+// Hot Module Replacement
+if(false) {
+	// When the styles change, update the <style> tags
+	if(!content.locals) {
+		module.hot.accept("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/lib/index.js!../../../../node_modules/sass-loader/lib/loader.js!./note.scss", function() {
+			var newContent = require("!!../../../../node_modules/css-loader/index.js!../../../../node_modules/postcss-loader/lib/index.js!../../../../node_modules/sass-loader/lib/loader.js!./note.scss");
+			if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+			update(newContent);
+		});
+	}
+	// When the module is disposed, remove the <style> tags
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+/* 82 */
+/***/ (function(module, exports, __webpack_require__) {
+
+// style-loader: Adds some css to the DOM by adding a <style> tag
+
+// load the styles
+var content = __webpack_require__(59);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38181,13 +38367,13 @@ if(false) {
 }
 
 /***/ }),
-/* 80 */
+/* 83 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(58);
+var content = __webpack_require__(60);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38212,13 +38398,13 @@ if(false) {
 }
 
 /***/ }),
-/* 81 */
+/* 84 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(59);
+var content = __webpack_require__(61);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38243,13 +38429,13 @@ if(false) {
 }
 
 /***/ }),
-/* 82 */
+/* 85 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(60);
+var content = __webpack_require__(62);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // Prepare cssTransformation
 var transform;
@@ -38274,7 +38460,7 @@ if(false) {
 }
 
 /***/ }),
-/* 83 */
+/* 86 */
 /***/ (function(module, exports) {
 
 
@@ -38369,7 +38555,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 84 */
+/* 87 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(22);

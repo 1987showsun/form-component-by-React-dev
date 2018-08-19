@@ -23,7 +23,10 @@
       "data"        : [],                       // type select / multiple / radio , option's data 
       "label"       : "Username",               // html input label , no label input width 100%
       "placeholder" : "please input your name", // html input placeholder , init null
-      "required"    : false,                    // html input required "trun / false",
+      "required"    : {
+        "switch"       : false / true,
+        "msg"          : ""
+      },                    // html input required "trun / false",
       "showTime"    : false,                    // for type date , time show / hide
       "children"    : []                        // only type select 
     },
@@ -55,7 +58,10 @@
       ],                       // type select / multiple / radio , option's data 
       "label"       : "Username",               // html input label , no label input width 100%
       "placeholder" : "please input your name", // html input placeholder , init null
-      "required"    : false,                    // html input required "trun / false",
+      "required"    : {
+        "switch"       : false / true,
+        "msg"          : ""
+      },                    // html input required "trun / false",
       "showTime"    : false,                    // for type date , time show / hide
       "children"    : []                        // only type select 
     }
@@ -73,7 +79,10 @@
       "data"        : [],                       // type select / multiple / radio , option's data 
       "label"       : "Username",               // html input label , no label input width 100%
       "placeholder" : "please input your name", // html input placeholder , init null
-      "required"    : false,                    // html input required "trun / false"
+      "required"    : {
+        "switch"       : false / true,
+        "msg"          : ""
+      },                    // html input required "trun / false"
       "showTime"    : false                     // for type date , time show / hide
     }
   ]
@@ -113,6 +122,6 @@
 | data                    | Object                     | data       : [{ "value":"", "name":"" }]                                                     |
 | label                   | string                     | label      : "input label"                                                                   |
 | placeholder             | string                     | placeholder: "input placeholder"                                                             |
-| required                | boolean                    | required   : true / false                                                                    |
+| required                | Object                     | required   : { "switch": false, "msg": "" } / { "switch": true, "msg": "" }                  |
 | showTime                | boolean                    | showTime   : true / false                                                                    |
 | children                | Object                     | children   : [{<br/> "key": "",<br/> "type":"",<br/> "name":"",<br/> "value":[{}]/"",<br/> "data":[{}],<br/> "label":"",<br/> "placeholder":"",<br/> "required": true/false,<br/> "showTime":true/false<br/> }]|

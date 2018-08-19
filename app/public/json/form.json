@@ -6,7 +6,10 @@
         "data"        : [],
         "label"       : "Username",
         "placeholder" : "please input your name",
-        "required"    : false
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     },
     {
         "type"        : "password",
@@ -15,7 +18,10 @@
         "data"        : [],
         "label"       : "Password",
         "placeholder" : "password",
-        "required"    : false,
+        "required"    : {
+            "switch"     : true,
+            "msg"        : "Password cannot be left blank"
+        },
         "doubleCheck" : true
     },
     {
@@ -25,7 +31,10 @@
         "data"        : [],
         "label"       : "Name",
         "placeholder" : "please input your password",
-        "required"    : false
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     },
     {
         "type"        : "number",
@@ -34,7 +43,10 @@
         "data"        : [],
         "label"       : "Age",
         "placeholder" : "please input your age",
-        "required"    : false
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     },
     {
         "type"        : "mail",
@@ -43,7 +55,10 @@
         "data"        : [],
         "label"       : "e-mail",
         "placeholder" : "please input your mail",
-        "required"    : false
+        "required"    : {
+            "switch"     : true,
+            "msg"        : "e-mail cannot be left blank"
+        }
     },
     {
         "type"        : "radio",
@@ -73,7 +88,10 @@
         ],
         "label"       : "e-mail",
         "placeholder" : "please input your mail",
-        "required"    : false
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     },
     {
         "type"        : "textarea",
@@ -82,7 +100,10 @@
         "data"        : [],
         "label"       : "123",
         "placeholder" : "please input your age",
-        "required"    : false
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     },
     {
         "type"        : "select",
@@ -116,7 +137,10 @@
         ],
         "label"       : "Like1",
         "placeholder" : "City / County",
-        "required"    : false,
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        },
         "children"    : [
             {
                 "key"            : "Taipei City",
@@ -389,36 +413,11 @@
         ],
         "label"       : "Like2",
         "placeholder" : "please input your like",
-        "required"    : false,
-        "children"    : [
-            {
-                "type"           : "text",
-                "name"           : "option1",
-                "value"          : "",
-                "data"           : [],
-                "label"          : "",
-                "placeholder"    : "children_test2-1",
-                "required"       : false
-            },
-            {
-                "type"           : "text",
-                "name"           : "option2",
-                "value"          : "",
-                "data"           : [],
-                "label"          : "",
-                "placeholder"    : "children_test2-2",
-                "required"       : false
-            },
-            {
-                "type"           : "text",
-                "name"           : "option3",
-                "value"          : "",
-                "data"           : [],
-                "label"          : "",
-                "placeholder"    : "children_test2-3",
-                "required"       : false
-            }
-        ]
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        },
+        "children"    : []
     },
     {
         "type"        : "number",
@@ -427,7 +426,10 @@
         "data"        : [],
         "label"       : "Number",
         "placeholder" : "please input your age",
-        "required"    : false
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     },
     {
         "type"        : "date",
@@ -436,7 +438,10 @@
         "data"        : [],
         "label"       : "Start date",
         "placeholder" : "YYYY/MM/DD",
-        "required"    : false,
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        },
         "showTime"    : false
     },
     {
@@ -446,7 +451,10 @@
         "data"        : [],
         "label"       : "End date",
         "placeholder" : "YYYY/MM/DD hh:mm:dd",
-        "required"    : false,
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        },
         "showTime"    : true
     },
     {
@@ -465,6 +473,9 @@
         "data"        : [],
         "label"       : "",
         "placeholder" : "please input your option name",
-        "required"    : false
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     }
 ]

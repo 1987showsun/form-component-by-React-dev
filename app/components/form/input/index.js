@@ -47,19 +47,23 @@ export default class Index extends React.Component{
         let name     = this.state.name;
         let value    = this.state[name];
         let pass     = this.state.pass;
-        
-        switch( type ){
-            case 'number':
-                pass   = numberCheck(value);
-                break;
 
-            case 'password':
-                pass   = this.doubleCheck();
-                break;
-            
-            case 'mail':
-                pass   = mailCheck(value);
-                break;
+        if( this.state.doubleCheck ){
+            pass   = this.doubleCheck();
+        }else{
+            switch( type ){
+                case 'number':
+                    pass   = numberCheck(value);
+                    break;
+                
+                case 'mail':
+                    pass   = mailCheck(value);
+                    break;
+
+                default :
+                    pass   = true;
+                    break;
+            }
         }
 
         this.setState({

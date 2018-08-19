@@ -1,4 +1,5 @@
-import React              from 'react';
+import React                     from 'react';
+import { FaExclamationTriangle } from 'react-icons/fa';
 
 //Components
 import Multiple          from './multiple';
@@ -7,8 +8,11 @@ import Radio             from './radio';
 import Textarea          from './textarea';
 import Datetime          from './datetime';
 import Select            from './select';
+import Note              from './note';
 
 import './style.scss';
+
+let delayTime;
 
 export default class Test extends React.Component{
 
@@ -28,16 +32,61 @@ export default class Test extends React.Component{
         this.state = {
             data,
             formObject     : formObject,
-            labelSwitch    : labelSwitch
+            labelSwitch    : labelSwitch,
+            msg            : [],
+            noteDisplay    : false
         }
     }
 
-    onSubmit(e){
+    handleSubmit(e){
         e.preventDefault();
         const formObject = Object.assign({},this.state.formObject);
-        if( this.props.result!=undefined ){
-            this.props.result(formObject);
+        const msg        = [];
+        const required   = this.handleRequired();
+
+        if( required.length!=0 ){
+
+            required.map((item,i)=>{
+                msg.push( 
+                    <li key={`note${i}`}>
+                        { item['required']['msg'] || "The form is not filled correctly" }
+                        <span className="note-icon"><FaExclamationTriangle /></span>
+                    </li>
+                );
+            })
+
+            this.setState({
+                msg         : msg,
+                noteDisplay : true
+            },()=>{
+                clearTimeout(delayTime);
+                delayTime = setTimeout(()=>{
+                    this.setState({
+                        noteDisplay : false
+                    })
+                },3000);
+            });
+            
+        }else{
+            if( this.props.result!=undefined ){
+                this.props.result(formObject);
+            }
         }
+
+    }
+
+    handleRequired(){
+        const formObject = Object.assign({},this.state.formObject);
+        const data       = Object.assign([],this.state.data);
+        return data.filter((item,i)=>{
+            const required = item['required']['switch'] || false;
+            if( required ){
+                const name = item['name'];
+                if(formObject[name]==""){
+                    return item;
+                }
+            }
+        })
     }
 
     multipleResult(data){
@@ -151,7 +200,6 @@ export default class Test extends React.Component{
             let formObject = this.state.formObject;
             let data       = this.state.data;
             let name       = item['name'];
-            let children   = item['children'];
             let value      = formObject[name];
 
             if( value!="" ){
@@ -172,7 +220,7 @@ export default class Test extends React.Component{
 
     render(){
         return(
-            <form className={`sun-dev-form-component `} onSubmit={ this.onSubmit.bind(this) }>
+            <form className={`sun-dev-form-component `} onSubmit={ this.handleSubmit.bind(this) }>
                 <ul className="form-ul">
                     {
                         this.state.data.map((item,i)=>{
@@ -203,6 +251,8 @@ export default class Test extends React.Component{
                         <button type="submit">Submit</button>
                     </li>
                 </ul>
+
+                <Note noteDisplay={this.state.noteDisplay} msg={this.state.msg}/>
             </form>
         );
     }

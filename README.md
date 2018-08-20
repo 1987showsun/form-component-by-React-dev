@@ -17,7 +17,7 @@
 ```js
   [
     {
-      "type"        : "text",                   // html input type  ex: text / password / number / mail / radio / textarea / select / date / multiple
+      "type"        : "text",                   // html input type  ex: text / password / number / mail / radio / textarea / select / date / multiple / file
       "name"        : "username",               // html input name , only name
       "value"       : "sun",                    // html input value , init value null ; When type is equal to multiple is Object
       "data"        : [],                       // type select / multiple / radio , option's data 
@@ -32,7 +32,7 @@
     },
     { ... },
     {
-      "type"        : "select",                 // html input type  ex: text / password / number / mail / radio / textarea / select / date / multiple
+      "type"        : "select",                 // html input type  ex: text / password / number / mail / radio / textarea / select / date / multiple / file
       "name"        : "like",                   // html input name , only name
       "value"       : [
         {
@@ -114,14 +114,14 @@
 
 
 ## Use direction Object Api
-| Api                     | type                       | method                                                                                       |
-|-------------------------|----------------------------|----------------------------------------------------------------------------------------------|
-| type                    | string                     | type       : "text / password / number / mail / radio / textarea / select / date / multiple" |
-| name                    | string                     | name       : "input name (only))"                                                            |
-| value                   | string / Object            | value      : "test value"  / [{ "value":"", "name":"" }]                                     |
-| data                    | Object                     | data       : [{ "value":"", "name":"" }]                                                     |
-| label                   | string                     | label      : "input label"                                                                   |
-| placeholder             | string                     | placeholder: "input placeholder"                                                             |
-| required                | Object                     | required   : { "switch": false, "msg": "" } / { "switch": true, "msg": "" }                  |
-| showTime                | boolean                    | showTime   : true / false                                                                    |
+| Api                     | type                       | method                                                                                              |
+|-------------------------|----------------------------|-----------------------------------------------------------------------------------------------------|
+| type                    | string                     | type       : "text / password / number / mail / radio / textarea / select / date / multiple / file" |
+| name                    | string                     | name       : "input name (only))"                                                                   |
+| value                   | string / Object            | value      : "test value" / [{ "value":"", "name":"" }]                                             |
+| data                    | Object                     | data       : [{ "value":"", "name":"" }]                                                            |
+| label                   | string                     | label      : "input label"                                                                          |
+| placeholder             | string                     | placeholder: "input placeholder"                                                                    |
+| required                | Object                     | required   : { "switch": false, "msg": "" } / { "switch": true, "msg": "" }                         |
+| showTime                | boolean                    | showTime   : true / false                                                                           |
 | children                | Object                     | children   : [{<br/> "key": "",<br/> "type":"",<br/> "name":"",<br/> "value":[{}]/"",<br/> "data":[{}],<br/> "label":"",<br/> "placeholder":"",<br/> "required": true/false,<br/> "showTime":true/false<br/> }]|

@@ -8,6 +8,7 @@ import Radio             from './radio';
 import Textarea          from './textarea';
 import Datetime          from './datetime';
 import Select            from './select';
+import File              from './file';
 import Note              from './note';
 
 import './style.scss';
@@ -129,6 +130,20 @@ export default class Test extends React.Component{
                         placeholder    = { item['placeholder'] }
                         result         = { this.result.bind(this) }
                     />     
+                );
+                break;
+            
+            case 'file':
+                return(
+                    <File 
+                        key            = {i}
+                        required       = { item['required'] || false }
+                        type           = { item['type'] }
+                        name           = { item['name'] } 
+                        placeholder    = { item['placeholder'] }
+                        accept         = { item['accept'] || "file_extension" }
+                        result         = { this.result.bind(this) }
+                    />
                 );
                 break;
 

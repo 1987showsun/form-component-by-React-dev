@@ -1,0 +1,86 @@
+.audio-wrap{
+    width          : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: space-between;
+    position       : relative;
+    .controls-btn{
+        width             : 35px;
+        height            : 35px;
+        display           : flex;
+        align-items       : center;
+        justify-content   : center; 
+        color             : #fff;
+        background        : #000;
+        border-radius     : 100px;
+        cursor            : pointer;
+        font-size         : 1em;
+    }
+    ul{
+        &.controls-ul{
+            display         : flex;
+            align-items     : center;
+            >li{
+                display        : inline-flex;
+                margin-right   : 5px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                &.small-btn{
+                    .controls-btn{
+                        width        : 30px;
+                        height       : 30px;
+                        font-size    : 0.8em;
+                    }
+                }
+            }
+        }
+    }
+
+    .timeline-wrap{
+        width           : 100%;
+        height          : 7px;
+        display         : inline-flex;
+        background      : #ccc;
+        border-radius   : 100px;
+        margin          : 0px 5px;
+        cursor          : pointer;
+        .timeline-now-play{
+            width            : 40%;
+            height           : 100%;
+            display          : flex;
+            align-items      : center;
+            background       : #f36;
+            justify-content  : flex-end;
+            border-radius    : 100px;
+            >.do{
+                width            : 12px;
+                height           : 12px;
+                min-width        : 12px;
+                margin-right     : -6px;
+                display          : flex;
+                background       : #fff;
+                border-radius    : 100px;
+                box-shadow       : 0px 0px 5px rgba(0,0,0,.4);
+                transition       : all .3s;
+                &:hover{
+                    width          : 16px;
+                    height         : 16px;
+                    min-width      : 16px;
+                    margin-right   : -8px;
+                }
+            }
+        }
+    }
+    .time{
+        display       : inline-flex;
+        margin        : 0px 10px;
+        font-size     : 0.7em;
+        color         : #aaa;
+    }
+}
+audio{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}

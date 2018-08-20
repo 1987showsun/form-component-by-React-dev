@@ -477,5 +477,18 @@
             "switch"     : false,
             "msg"        : ""
         }
+    },
+    {
+        "type"        : "file",
+        "name"        : "file1",
+        "value"       : "",
+        "data"        : [],
+        "label"       : "",
+        "placeholder" : "please input your option name",
+        "accept"      : "",     
+        "required"    : {
+            "switch"     : false,
+            "msg"        : ""
+        }
     }
 ]

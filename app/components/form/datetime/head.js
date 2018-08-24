@@ -1,23 +1,31 @@
 import React from 'react';
-import { FaAngleLeft,FaAngleRight,FaCaretUp,FaCaretDown,FaAngleDoubleLeft,FaAngleDoubleRight }  from 'react-icons/fa';
+import { FaAngleLeft,FaAngleRight,FaAngleDoubleLeft,FaAngleDoubleRight }  from 'react-icons/fa';
+
+//Javascripts
+import { checkDate } from './checkFormat.js';
 
 export default class Head extends React.Component{
 
     constructor(props){
-
-        let _date     = new Date();
-        let initYear  = _date.getFullYear();
-        let initMonth = String( _date.getMonth()+1 ).length <2 ? `0${_date.getMonth()+1}` : _date.getMonth();
-
         super(props);
         this.state = {
-            year    : initYear,
-            month   : initMonth
+            year    : props.year,
+            month   : props.month,
         }
     }
 
     componentDidMount() {
-        this.result();
+        let sss = ['year','month'];
+        for( let i=0 ; i<sss.length ; i++ ){
+            this.result(sss[i]);
+        }
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            year    : nextProps.year,
+            month   : nextProps.month
+        })
     }
 
     changeDate(type,btnStatus){
@@ -49,17 +57,21 @@ export default class Head extends React.Component{
         }
 
         this.setState({
-            [ type ] : String(date).length<2? `0${date}` : date
+            [ type ] : checkDate(type,date),
         },()=>{
-            this.result();
+            this.result(type);
         })
     }
 
-    result(){
-        const date = `${this.state.year}-${this.state.month}`;
-        
+    result(type){
         if( this.props.result!=undefined ){
-            this.props.result( "date",date );
+            this.props.result( type,this.state[type] );
+        }
+    }
+
+    openList(type){
+        if( this.props.openList!=undefined ){
+            this.props.openList( type );
         }
     }
 
@@ -68,7 +80,11 @@ export default class Head extends React.Component{
             <div className="calendar-head">
                 <div className="calendar-head-btn calendar-btn-prev" onClick={this.changeDate.bind(this,"year","prev")}><FaAngleDoubleLeft /></div>
                 <div className="calendar-head-btn calendar-btn-prev" onClick={this.changeDate.bind(this,"month","prev")}><FaAngleLeft /></div>
-                <div className="calendar-title">{`${this.state.year} / ${this.state.month}`}</div>
+                <div className="calendar-title">
+                    <span className="head-result" onClick={this.openList.bind(this,"year")}>{`${this.state.year}`}</span>
+                     / 
+                    <span className="head-result" onClick={this.openList.bind(this,"month")}>{`${this.state.month}`}</span>
+                </div>
                 <div className="calendar-head-btn calendar-btn-next" onClick={this.changeDate.bind(this,"month","next")}><FaAngleRight /></div>
                 <div className="calendar-head-btn calendar-btn-next" onClick={this.changeDate.bind(this,"year","next")}><FaAngleDoubleRight /></div>
             </div>

@@ -1,20 +1,21 @@
 import React from 'react';
 
+//Javascripts
+import { checkDate } from './checkFormat.js';
+
 export default class Calendar extends React.Component{
 
     constructor(props){
-
-        let _date     = new Date();
-        let initYear  = _date.getFullYear();
-        let initMonth = String( _date.getMonth()+1 ).length <2 ? `0${_date.getMonth()+1}` : _date.getMonth();
-        let initDay   = String(_date.getDate()).length<2       ? `0${_date.getDate()}`    : _date.getDate();
-
         super(props);
         this.state = {
-            today                : `${initYear}-${initMonth}-${initDay}`,
-            currentDate          : props.currentDate,
-            selectDay            : initDay,
-            selectedDate         : `${initYear}-${initMonth}-${initDay}`,
+            openListType         : props.openListType,
+            year                 : props.year,
+            month                : props.month,
+            day                  : props.day,
+            afterYear            : props.afterYear,
+            afterMonth           : props.afterMonth,
+            afterDay             : props.afterDay,
+            selectedDate         : `${props.afterYear}-${props.afterMonth}-${props.afterDay}`,
             prevMonthTotalDay    : 0,
             currentMonthTotalDay : 0,
             nextMonthTotalDay    : 0,
@@ -30,26 +31,25 @@ export default class Calendar extends React.Component{
 
     componentWillReceiveProps(nextProps) {
 
-        let currentDate     = nextProps.currentDate;
-        let currentYear     = Number( currentDate.split('-')[0] );
-        let currentMonth    = Number( currentDate.split('-')[1] );
-
         this.setState({
-            currentDate          : nextProps.currentDate,
-            prevMonthTotalDay    : new Date( currentYear , currentMonth-1 , 0 ).getDate(),
-            currentMonthTotalDay : new Date( currentYear , currentMonth   , 0 ).getDate(),
-            nextMonthTotalDay    : new Date( currentYear , currentMonth+1 , 0 ).getDate(),
-            currentStartDay      : new Date( currentYear , currentMonth-1 , 1 ).getDay(),
-            currentEndDay        : new Date( currentYear , currentMonth   , 1 ).getDay()
+            openListType         : nextProps.openListType,
+            year                 : nextProps.year,
+            month                : nextProps.month,
+            afterDay             : nextProps.afterDay,
+            selectedDate         : `${nextProps.afterYear}-${nextProps.afterMonth}-${nextProps.afterDay}`,
+            prevMonthTotalDay    : new Date( nextProps.year , nextProps.month-1 , 0 ).getDate(),
+            currentMonthTotalDay : new Date( nextProps.year , nextProps.month   , 0 ).getDate(),
+            nextMonthTotalDay    : new Date( nextProps.year , nextProps.month+1 , 0 ).getDate(),
+            currentStartDay      : new Date( nextProps.year , nextProps.month-1 , 1 ).getDay(),
+            currentEndDay        : new Date( nextProps.year , nextProps.month   , 1 ).getDay()
         },()=>{
             this.setCalendarView();
         })
     }
 
     setCalendarView(){
-        let currentDate          = this.state.currentDate;
-        let currentYear          = Number( currentDate.split('-')[0] );
-        let currentMonth         = Number( currentDate.split('-')[1] );
+        let currentYear          = this.state.year;
+        let currentMonth         = this.state.month;
         let prevMonthTotalDay    = this.state.prevMonthTotalDay;
         let currentMonthTotalDay = this.state.currentMonthTotalDay;
         let currentStartDay      = this.state.currentStartDay;
@@ -57,11 +57,9 @@ export default class Calendar extends React.Component{
         let currentMonthArray    = [];
 
         const renderView = (type,i,ed,classname) => {
-
-            const year  = currentYear;
-            const month = String( currentMonth+ed ).length<2 ? `0${currentMonth+ed}` : currentMonth+ed;
-            const day   = String( i ).length<2               ? `0${i}`               : i;
-
+            const year  = checkDate( 'year' , Number(currentYear) );
+            const month = checkDate( 'month', Number(currentMonth)-ed );
+            const day   = checkDate( 'day'  , i );
             const checkCurrentDate = (date) => {
                 const selectedDate = this.state.selectedDate;
                 if( selectedDate==date ){
@@ -72,7 +70,7 @@ export default class Calendar extends React.Component{
             }
 
             return (
-                <li key={`${type}${i}`} className={`${classname} ${checkCurrentDate(`${year}-${month}-${day}`)}`} onClick={this.selected.bind(this,`${year}-${month}-${day}`,i)}><span className="touch-block">{i}</span></li>
+                <li key={`${type}${i}`} className={`${classname} ${checkCurrentDate(`${year}-${month}-${day}`)}`} onClick={this.selected.bind(this,`${year}-${month}-${day}`,year,month,day)}><span className="touch-block">{i}</span></li>
             );
         }
 
@@ -93,9 +91,11 @@ export default class Calendar extends React.Component{
         });
     }
 
-    selected(selectedDate,selectDay){
+    selected(selectedDate,year,month,day){
         this.setState({
-            selectDay      : selectDay,
+            afterYear      : year,
+            afterMonth     : month,
+            afterDay       : day,
             selectedDate   : selectedDate,
         },()=>{
             this.result();
@@ -103,9 +103,11 @@ export default class Calendar extends React.Component{
     }
 
     result(){
-        let selectedDate = `${this.state.selectedDate}`;
-        if( this.props.result!=undefined ){
-            this.props.result('allDate',selectedDate);
+        let sss          = ['afterYear','afterMonth','afterDay'];
+        for( let i=0 ; i<sss.length ; i++ ){
+            if( this.props.result!=undefined ){
+                this.props.result(sss[i], this.state[sss[i]] );
+            }
         }
     }
 
@@ -129,6 +131,6 @@ export default class Calendar extends React.Component{
                     </ul>
                 </div>
             </div>
-        );
+        );        
     }
 }

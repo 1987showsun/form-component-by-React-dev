@@ -4,21 +4,29 @@ import { FaCaretUp,FaCaretDown }  from 'react-icons/fa';
 export default class Time extends React.Component{
 
     constructor(props){
-        let _date   = new Date();
-        let initHr  = String( _date.getHours()   ).length <2 ? `0${_date.getHours()}`   : _date.getHours()  ;
-        let initMin = String( _date.getMinutes() ).length <2 ? `0${_date.getMinutes()}` : _date.getMinutes();
-        let initSec = String( _date.getSeconds() ).length <2 ? `0${_date.getSeconds()}` : _date.getSeconds();
-
         super(props);
         this.state = {
-            hr     : initHr,
-            min    : initMin,
-            sec    : initSec
+            timeArray  : ['hrs','min','sec'],
+            showTime   : props.showTime,
+            hrs        : props.hrs,
+            min        : props.min,
+            sec        : props.sec,
+            afterHrs   : props.afterHrs,
+            afterMin   : props.afterMin,    
+            afterSec   : props.afterSec
         }
     }
 
     componentDidMount() {
         this.result();
+    }
+
+    componentWillReceiveProps(nextProps) {
+        this.setState({
+            hrs        : nextProps.hrs,
+            min        : nextProps.min,
+            sec        : nextProps.sec
+        })
     }
 
     handleChange(e){
@@ -34,7 +42,7 @@ export default class Time extends React.Component{
     changeTime(type,btnStatus){
 
         let time  = Number(this.state[type]);
-        let range = type=="hr"? 23 : 59;
+        let range = type=="hrs"? 23 : 59;
 
         switch(btnStatus){
             case "up":
@@ -60,45 +68,52 @@ export default class Time extends React.Component{
     }
 
     result(){
-        const time = `${this.state.hr}:${this.state.min}:${this.state.sec}`;
+        const timeArray = this.state.timeArray;
         if( this.props.result!=undefined ){
-            this.props.result('time',time);
+            for( let i=0 ; i<timeArray.length ; i++ ){
+                this.props.result( timeArray[i] , this.state[timeArray[i]] );
+            }
         }
     }
 
     render(){
-        return(
-            <div className="calendar-time">
-                <ul>
-                    <li>
-                        <div className="input-box">
-                            <input type="text" name="hr" value={this.state.hr} onChange={this.handleChange.bind(this)}/>
-                            <div className="calendar-time-btn-wrap">
-                                <span className="calendar-time-btn calendar-time-btn-prev" onClick={this.changeTime.bind(this,"hr","up")}><FaCaretUp /></span>
-                                <span className="calendar-time-btn calendar-time-btn-next" onClick={this.changeTime.bind(this,"hr","down")}><FaCaretDown /></span>
+        const showTime  = this.state.showTime;
+        if( showTime ){
+            return(
+                <div className="calendar-time">
+                    <ul>
+                        <li>
+                            <div className="input-box">
+                                <input type="text" name="hrs" value={this.state.hrs} onChange={this.handleChange.bind(this)}/>
+                                <div className="calendar-time-btn-wrap">
+                                    <span className="calendar-time-btn calendar-time-btn-prev" onClick={this.changeTime.bind(this,"hrs","up")}><FaCaretUp /></span>
+                                    <span className="calendar-time-btn calendar-time-btn-next" onClick={this.changeTime.bind(this,"hrs","down")}><FaCaretDown /></span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="input-box">
-                            <input type="text" name="min" value={this.state.min} onChange={this.handleChange.bind(this)}/>
-                            <div className="calendar-time-btn-wrap">
-                                <span className="calendar-time-btn calendar-time-btn-prev" onClick={this.changeTime.bind(this,"min","up")}><FaCaretUp /></span>
-                                <span className="calendar-time-btn calendar-time-btn-next" onClick={this.changeTime.bind(this,"min","down")}><FaCaretDown /></span>
+                        </li>
+                        <li>
+                            <div className="input-box">
+                                <input type="text" name="min" value={this.state.min} onChange={this.handleChange.bind(this)}/>
+                                <div className="calendar-time-btn-wrap">
+                                    <span className="calendar-time-btn calendar-time-btn-prev" onClick={this.changeTime.bind(this,"min","up")}><FaCaretUp /></span>
+                                    <span className="calendar-time-btn calendar-time-btn-next" onClick={this.changeTime.bind(this,"min","down")}><FaCaretDown /></span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div className="input-box">
-                            <input type="text" name="sec" value={this.state.sec} onChange={this.handleChange.bind(this)}/>
-                            <div className="calendar-time-btn-wrap">
-                                <span className="calendar-time-btn calendar-time-btn-prev" onClick={this.changeTime.bind(this,"sec","up")}><FaCaretUp /></span>
-                                <span className="calendar-time-btn calendar-time-btn-next" onClick={this.changeTime.bind(this,"sec","down")}><FaCaretDown /></span>
+                        </li>
+                        <li>
+                            <div className="input-box">
+                                <input type="text" name="sec" value={this.state.sec} onChange={this.handleChange.bind(this)}/>
+                                <div className="calendar-time-btn-wrap">
+                                    <span className="calendar-time-btn calendar-time-btn-prev" onClick={this.changeTime.bind(this,"sec","up")}><FaCaretUp /></span>
+                                    <span className="calendar-time-btn calendar-time-btn-next" onClick={this.changeTime.bind(this,"sec","down")}><FaCaretDown /></span>
+                                </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        );
+                        </li>
+                    </ul>
+                </div>
+            );
+        }else{
+            return null;
+        }
     }
 }

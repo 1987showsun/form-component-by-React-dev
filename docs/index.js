@@ -16446,7 +16446,7 @@ var Calendar = function (_React$Component) {
 
             var renderView = function renderView(type, i, ed, classname) {
                 var year = (0, _checkFormat.checkDate)('year', Number(currentYear));
-                var month = (0, _checkFormat.checkDate)('month', Number(currentMonth) - ed);
+                var month = (0, _checkFormat.checkDate)('month', Number(currentMonth) + ed);
                 var day = (0, _checkFormat.checkDate)('day', i);
                 var checkCurrentDate = function checkCurrentDate(date) {
                     var selectedDate = _this3.state.selectedDate;

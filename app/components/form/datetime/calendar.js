@@ -30,7 +30,6 @@ export default class Calendar extends React.Component{
     }
 
     componentWillReceiveProps(nextProps) {
-
         this.setState({
             openListType         : nextProps.openListType,
             year                 : nextProps.year,
@@ -58,7 +57,7 @@ export default class Calendar extends React.Component{
 
         const renderView = (type,i,ed,classname) => {
             const year  = checkDate( 'year' , Number(currentYear) );
-            const month = checkDate( 'month', Number(currentMonth)-ed );
+            const month = checkDate( 'month', Number(currentMonth)+ed );
             const day   = checkDate( 'day'  , i );
             const checkCurrentDate = (date) => {
                 const selectedDate = this.state.selectedDate;
